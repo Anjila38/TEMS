@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trailmate</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body class="mx-20">
+    <nav class="px-5 pt-4 py-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="social-media-icons flex space-x-3">
+          <a href="#"><i class="fa-brands p-2 fa-md fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands p-2 fa-md fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands p-2 fa-md fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands p-2 fa-md fa-linkedin"></i></a>
+        </div>
+        <div class="contact flex space-x-4">
+          <a href="#" class="flex items-center"
+            ><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
+            <span class="pl-2 text-sm">+977 9817153553</span></a
+          >
+          <a href="#" class="flex items-center"
+            ><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
+            <span class="pl-2 text-sm">support@trailmate.com</span></a
+          >
+        </div>
+      </div>
+    </nav>
+    <hr class="custom-hr" />
+    <!-- navbar -->
+
+    <div class="container mx-auto my-4 flex justify-between items-center px-5">
+      <a href="#" class="text-3xl font-bold text-red-400">TrailMate</a>
+
+      <div class="flex items-center space-x-4">
+        <div class="bg-gray-100 p-2 rounded-lg">
+          <i class="fa-solid fa-grip" style="color: #949494"></i>
+        </div>
+        <div
+          class="flex items-center border border-gray-300 rounded-lg overflow-hidden"
+        >
+          <input
+            type="text"
+            placeholder="Search here"
+            class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0"
+          /><i
+            class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"
+          ></i>
+        </div>
+
+        <div>
+          <i
+            class="fa-solid fa-lg fa-bag-shopping px-2"
+            style="color: #000000"
+          ></i>
+          <i class="fa-solid fa-lg fa-envelope px-3" style="color: #000000"></i>
+        </div>
+        <a class="text-red-400 text-sm underline" href="#">Sign in</a>
+
+        <button class="text-white text-sm px-3 py-2 bg-red-400 rounded">
+          Sign Up
+        </button>
+      </div>
+    </div>
+    <div class="pt-4 text-gray-950 text-xs flex justify-center space-x-6">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Product</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- hero section -->
+
+    <div id="sync1" class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="hero-section mx-5">
+          <h1 class="text-4xl font-bold max-w-md">
+            Better Gears for Better Experience
+          </h1>
+          <p class="mt-4 text-gray-600 max-w-md mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <button
+            class="text-white text-xs px-3 py-2 font-light bg-red-400 rounded"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="hero-section mx-5">
+          <h1 class="text-4xl font-bold max-w-md">
+            Better Gears for Better Experience
+          </h1>
+          <p class="mt-4 text-gray-600 max-w-md mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <button
+            class="text-white px-3 py-2 text-xs font-light bg-red-400 rounded"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- category -->
+
+    <div
+      class="title-part m-5 font-semibold text-xl"
+      style="font-family: 'Montserrat'"
+    >
+      <h1>Category</h1>
+    </div>
+    <div class="equip-category pt-4 text-gray-950 text-xs mx-5 flex space-x-6">
+      <a href="#" class="flex items-center space-x-2">
+        <img
+          src="/images/trekking-pole.png"
+          alt="Trekking Poles"
+          class="w-5 h-5"
+        />
+        <span>Trekking Poles</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2">
+        <img
+          src="/images/headlamp.png"
+          alt="HeadLamp"
+          class="w-5 h-5"
+        />
+        <span>HeadLamp</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2">
+        <img
+          src="/images/hammock.png"
+          alt="Hammock"
+          class="w-5 h-5"
+        />
+        <span>Hammock</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2">
+        <img
+          src="/images/gaiter.png"
+          alt="Gaiters"
+          class="w-5 h-5"
+        />
+        <span>Gaiter</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2">
+        <img
+          src="/images/sunglasses.png"
+          alt="Sunglasses"
+          class="w-5 h-5"
+        />
+        <span>Sunglasses</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2">
+        <img
+          src="/images/other.png"
+          alt="Others"
+          class="w-5 h-5"
+        />
+        <span>Other Categories</span>
+      </a>
+     
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- owl carousel -->
+    <script>
+      $(document).ready(function () {
+        $("#sync1").owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          dots: true,
+        });
+      });
+    </script>
+  </body>
+</html>

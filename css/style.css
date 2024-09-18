@@ -1,0 +1,50 @@
+*{
+    font-family: poppins;
+    /* letter-spacing:1px; */
+}
+.social-media-icons a{
+color:#949494 ;}
+
+.contact a{
+color:#000000 ;
+text-decoration: none;
+letter-spacing:1px;
+}
+
+.custom-hr{
+width: 95%;
+position: relative;
+align-items: center;
+margin: 0 auto;
+}
+
+.hero-section{
+    margin-top: 25px;
+    padding: 50px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    border-color: none;
+    
+}
+.hero-section h1{
+    color: #383838;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 50px;
+    font-family: montserrat;
+}
+
+.title-part{
+    font-family:"Montserrat";
+    font-weight: 600;
+    
+}
+.equip-category a{
+    border: 1px solid rgb(160, 160, 160);
+    padding: 4px 20px;
+    margin: 0px 2px;
+    
+    border-radius:4px;
+}
+
+
