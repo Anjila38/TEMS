@@ -39,12 +39,39 @@ margin: 0 auto;
     font-weight: 600;
     
 }
+
 .equip-category a{
     border: 1px solid rgb(160, 160, 160);
-    padding: 4px 20px;
-    margin: 0px 2px;
+    padding: 12px 20px;
+    margin: 4px 2px;
     
     border-radius:4px;
+}
+
+.sub-headings{
+    font-family: montserrat;
+    padding-top: 60px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+#timer-right-1 .flex-col,
+#timer-right-2 .flex-col {
+  font-size: 1rem; /* Smaller text size */
+  padding:6px 6px; /* Smaller padding */
+}
+
+#timer-right-1 .text-2xl,
+#timer-right-2 .text-2xl {
+  font-size: 1rem; /* Smaller timer numbers */
+}
+
+#timer-right-1 .text-sm,
+#timer-right-2 .text-sm {
+  font-size: 0.75rem; /* Smaller label text */
+}
+.collection-card h3{
+    font-family: montserrat;
 }
 
 
