@@ -1,6 +1,6 @@
 *{
     font-family: poppins;
-    /* letter-spacing:1px; */
+   
 }
 .social-media-icons a{
 color:#949494 ;}
@@ -57,21 +57,52 @@ margin: 0 auto;
 
 #timer-right-1 .flex-col,
 #timer-right-2 .flex-col {
-  font-size: 1rem; /* Smaller text size */
-  padding:6px 6px; /* Smaller padding */
+  font-size: 1rem; 
+  padding:6px 6px; 
 }
 
 #timer-right-1 .text-2xl,
 #timer-right-2 .text-2xl {
-  font-size: 1rem; /* Smaller timer numbers */
+  font-size: 1rem; 
 }
-
+#timer-left-2 .text-2xl{
+    font-size: 0.9rem;
+    color: white;
+}
+#timer-left-2 .text-sm{
+    font-size: 0.7rem;
+    color: white;
+}
+#timer-left-2 .border{
+    border-color: rgb(255, 255, 255);
+    padding: 8px;
+   
+    
+}
 #timer-right-1 .text-sm,
 #timer-right-2 .text-sm {
-  font-size: 0.75rem; /* Smaller label text */
+  font-size: 0.75rem;
 }
 .collection-card h3{
     font-family: montserrat;
 }
+#myProgress, #myProgress2 {
+    width: 85%;
+    border-radius: 3px;
+    background-color: rgb(199, 199, 199);
+    margin: 5px auto 20px auto;
+  padding: 0;
+    
+  }
+  
+  #myBar,#myBar2 {
+    width: 40%;
+    height: 10px;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #F46B5B;
+    border: none;
+    
+  }
 
 
