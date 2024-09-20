@@ -105,4 +105,47 @@ margin: 0 auto;
     
   }
 
-
+/* Wrapper section should have relative positioning for absolute child positioning */
+.top-rated-section {
+    position: relative;
+    padding-bottom: 50px; /* To ensure there's space for dots */
+ }
+ 
+ /* Position the owl-dots aligned with the title */
+ .top-rated-section .owl-dots {
+    position: absolute !important;
+    top: -50px; /* Position slightly above the carousel */
+    right: 0; /* Align to the right */
+    display: flex !important;
+    justify-content: flex-end;
+ }
+ 
+ /* Style individual dots */
+ .top-rated-section .owl-dot {
+    background: #e5e7eb !important; /* Light grey background for the dot */
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 5px !important;
+    border-radius: 50% !important;
+ }
+ 
+ /* Style active dot */
+ .top-rated-section .owl-dot.active {
+    background: #ff6243 !important; /* Accent color for the active dot */
+ }
+ 
+ /* Optional: Adjust navigation for the carousel */
+ .top-rated-section .owl-nav {
+    position: absolute !important;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+ }
+ 
+ .top-rated-section .owl-prev, .top-rated-section .owl-next {
+    background-color: #ff6243 !important; /* Color for navigation arrows */
+    color: #fff !important;
+    padding: 5px 10px !important;
+    border-radius: 50% !important;
+ }
+ 
