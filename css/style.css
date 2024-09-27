@@ -2,6 +2,10 @@
     font-family: poppins;
    
 }
+div .text-red-400{
+    color:#F46B5B;
+}
+
 .social-media-icons a{
 color:#949494 ;}
 
@@ -51,6 +55,11 @@ margin: 0 auto;
 .sub-headings{
     font-family: montserrat;
     padding-top: 60px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.about-sub-heading{
+    font-family: montserrat;
     font-weight: bolder;
     font-size: 35px;
 }
@@ -149,3 +158,6 @@ margin: 0 auto;
     border-radius: 50% !important;
  }
  
+ .why-choose-us img{
+    height: 50px;
+ }
