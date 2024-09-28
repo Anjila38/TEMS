@@ -161,3 +161,14 @@ margin: 0 auto;
  .why-choose-us img{
     height: 50px;
  }
+ .step-line {
+    height: 1px;
+    width: 100%;
+    background-color: #e5e7eb;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+.sell_product_question label{
+    font-family: montserrat;
+}
