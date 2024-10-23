@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
     <link rel="stylesheet" href="/css/style.css" />
 
     <link
@@ -34,173 +34,133 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body class="mx-20">
+</head>
+<body class="mx-20">
     <nav class="pt-4 py-2">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="social-media-icons flex space-x-3">
-          <a href="#"><i class="fa-brands p-2 fa-md fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands p-2 fa-md fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands p-2 fa-md fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands p-2 fa-md fa-linkedin"></i></a>
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="social-media-icons flex space-x-3">
+            <a href="#"><i class="fa-brands p-2 fa-md fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands p-2 fa-md fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands p-2 fa-md fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands p-2 fa-md fa-linkedin"></i></a>
+          </div>
+          <div class="contact flex space-x-4">
+            <a href="#" class="flex items-center"
+              ><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
+              <span class="pl-2 text-sm">+977 9817153553</span></a
+            >
+            <a href="#" class="flex items-center"
+              ><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
+              <span class="pl-2 text-sm">support@trailmate.com</span></a
+            >
+          </div>
         </div>
-        <div class="contact flex space-x-4">
-          <a href="#" class="flex items-center"
-            ><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
-            <span class="pl-2 text-sm">+977 9817153553</span></a
-          >
-          <a href="#" class="flex items-center"
-            ><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
-            <span class="pl-2 text-sm">support@trailmate.com</span></a
-          >
-        </div>
-      </div>
-    </nav>
-    <hr class="custom-hr" />
-
-    <!-- Navbar -->
-    <div
-      class="container mx-auto my-4 flex flex-col sm:flex-row justify-between items-center"
-    >
-      <a href="#" class="text-3xl font-bold text-red-400 mb-2 sm:mb-0"
-        >TrailMate</a
-      >
-
-      <!-- Navigation Links -->
+      </nav>
+      <hr class="custom-hr" />
+  
+      <!-- Navbar -->
       <div
-        class="pt-2 text-gray-950 text-sm flex justify-center space-x-7 mb-2 sm:mb-0"
+        class="container mx-auto my-4 flex flex-col sm:flex-row justify-between items-center"
       >
-        <a href="/index/main.html" class="hover:text-red-400">Home</a>
-        <a href="/index/about.html" class="hover:text-red-400">About</a>
-        <a href="#" class="hover:text-red-400">Product</a>
-        <a href="#" class="hover:text-red-400">Blog</a>
-        <a href="#" class="hover:text-red-400">Contact</a>
-      </div>
-
-      <div class="flex items-center space-x-4">
-        <div
-          class="flex items-center border border-gray-300 rounded-lg overflow-hidden"
+        <a href="#" class="text-3xl font-bold text-red-400 mb-2 sm:mb-0"
+          >TrailMate</a
         >
-          <input
-            type="text"
-            placeholder="Search here"
-            class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0"
-          />
-          <i class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"></i>
+  
+        <!-- Navigation Links -->
+        <div
+          class="pt-2 text-gray-950 text-sm flex justify-center space-x-7 mb-2 sm:mb-0"
+        >
+          <a href="/index/main.html" class="hover:text-red-400">Home</a>
+          <a href="/index/about.html" class="hover:text-red-400">About</a>
+          <a href="#" class="hover:text-red-400">Product</a>
+          <a href="#" class="hover:text-red-400">Blog</a>
+          <a href="#" class="hover:text-red-400">Contact</a>
         </div>
-
-        <div>
-          <i
-            class="fa-solid fa-lg fa-bag-shopping px-2"
-            style="color: #000000"
-          ></i>
-          <i class="fa-solid fa-lg fa-envelope px-3" style="color: #000000"></i>
-        </div>
-      </div>
-    </div>
-    <div class="flex items-center justify-center min-h-screen">
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-2 rounded-3xl max-w-4xl"
-      >
-        <!-- Login Section -->
-        <div class="border rounded-2xl px-14 py-8">
-          <h2 class="text-3xl font-bold mb-4" style="font-family: montserrat">
-            Login
-          </h2>
-          <p class="text-sm text-gray-400 mb-6">
-            Already have an account? Please, login!
-          </p>
-
-          <form>
-            <label for="email" class="text-xs m-1 font-md">Email</label>
+  
+        <div class="flex items-center space-x-4">
+          <div
+            class="flex items-center border border-gray-300 rounded-lg overflow-hidden"
+          >
             <input
-              type="email"
-              placeholder="email@email.com"
-              class="w-full p-2 mt-2 mb-4 border text-xs rounded-lg focus:outline-none focus:ring focus:ring-red-300"
+              type="text"
+              placeholder="Search here"
+              class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0"
             />
-            <label for="email" class="text-xs m-1 font-md">Password</label>
-            <input
-              type="password"
-              placeholder="Password"
-              class="w-full p-2 mt-2 mb-4 text-xs border rounded-lg focus:outline-none focus:ring focus:ring-red-300"
-            />
-            <button
-              class="w-full bg-red-400 text-sm text-white p-2 my-5 rounded-lg hover:bg-red-400 transition"
-            >
-              Login
-            </button>
-
-            <div class="flex items-center justify-between mb-5">
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="form-checkbox text-red-400" />
-
-                <span class="ml-2 text-xs text-gray-500">Remember me</span>
-              </label>
-              <a href="#" class="text-xs text-red-400 hover:underline"
-                >Forgot password?</a
-              >
-            </div>
-
-            <div class="flex items-center justify-center space-x-4 mt-6">
-              <p
-                class="font-semibold"
-                style="font-family: 'Montserrat', sans-serif"
-              >
-                Login With:
-              </p>
-              <i
-                class="fab fa-google text-xl text-gray-400 hover:text-red-400 cursor-pointer"
-              ></i>
-              <i
-                class="fab fa-twitter text-xl text-gray-400 hover:text-blue-400 cursor-pointer"
-              ></i>
-              <i
-                class="fab fa-facebook text-xl text-gray-400 hover:text-blue-600 cursor-pointer"
-              ></i>
-            </div>
-          </form>
-        </div>
-
-        <!-- Register Section -->
-        <div class="border rounded-2xl px-14 py-8">
-          <h2 class="text-3xl font-bold mb-4" style="font-family: montserrat">
-            Create Account
-          </h2>
-          <p class="text-sm text-gray-400 mb-6">
-            Don't have an account yet? Register here!
-          </p>
-
-          <form>
-            <label for="email" class="text-xs m-1 font-md">Email</label>
-            <input
-              type="email"
-              placeholder="email@email.com"
-              class="w-full p-2 mt-2 mb-4 border text-xs rounded-lg focus:outline-none focus:ring focus:ring-red-300"
-            />
-            <label for="email" class="text-xs m-1 font-md">Password</label>
-            <input
-              type="password"
-              placeholder="Password"
-              class="w-full p-2 mt-2 mb-4 text-xs border rounded-lg focus:outline-none focus:ring focus:ring-red-300"
-            />
-            <label for="confirm password" class="text-xs m-1 font-md">
-              Confirm Password</label
-            >
-            <input
-              type="password"
-              placeholder=" Confirm Password"
-              class="w-full p-2 mt-2 mb-4 text-xs border rounded-lg focus:outline-none focus:ring focus:ring-red-300"
-            />
-            <button
-              class="w-full bg-red-400 text-sm text-white p-2 my-5 rounded-lg hover:bg-red-400 transition"
-            >
-              Register
-            </button>
-          </form>
+            <i class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"></i>
+          </div>
+  
+          <div>
+            <i
+              class="fa-solid fa-lg fa-bag-shopping px-2"
+              style="color: #000000"
+            ></i>
+            <i class="fa-solid fa-lg fa-envelope px-3" style="color: #000000"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <section class="bg-red-400 -mx-20 px-28 text-white py-10">
+      <div class="flex items-center justify-center mt-8">
+        <div class="w-full max-w-5xl bg-white p-10 rounded-lg">
+      
+          <div class="flex space-x-8 items-center border rounded-lg px-5">
+            
+            <div class="w-1/4 flex flex-col items-center justify-center space-y-4 border-r h-80 border-gray-300 pr-6">
+              <a href="#">
+                <img src="/images/folder.png" alt="folder icon" class="w-24 h-24">
+              </a>
+              <p class="text-gray-500 text-sm text-center">Upload your document here</p>
+            </div>
+      
+            
+            <div class="w-3/4  p-8 mb-8">
+              <h2 class="text-2xl font-bold mb-2" style="font-family: montserrat;">Personal Details</h2>
+      
+              <span class="text-sm text-gray-500">
+                Already have an account? Please, 
+                <a href="/index/loginpage.html" class="text-sm text-red-500 hover:underline">login</a>
+              </span>
+      
+              <form class="grid grid-cols-2 gap-4 mt-8">
+                <div class="col-span-1">
+                  <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                  <input type="text" id="first-name"
+                    class="w-full p-1 my-1 border rounded-lg focus:outline-none focus:ring focus:ring-red-200">
+                </div>
+      
+              
+                <div class="col-span-1">
+                  <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                  <input type="text" id="last-name"
+                    class="w-full p-1 my-1 border rounded-lg focus:outline-none focus:ring focus:ring-red-200">
+                </div>
+      
+                <div class="col-span-1">
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input type="email" id="email"
+                    class="w-full p-1 my-1 border rounded-lg focus:outline-none focus:ring focus:ring-red-200">
+                </div>
+      
+                <div class="col-span-1">
+                  <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                  <input type="tel" id="phone"
+                    class="w-full p-1 my-1 border rounded-lg focus:outline-none focus:ring focus:ring-red-300">
+                </div>
+      
+                <div class="col-span-2 flex justify-end">
+                  <button class="bg-red-400 w-24 text-white px-2 py-1 text-sm rounded-lg hover:bg-red-500 transition">
+                    Next
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      
+        </div>
+      </div>
+      <section class="bg-red-400 -mx-20 px-28 text-white py-10">
         <div
           class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4"
         >
@@ -373,5 +333,6 @@
           </div>
         </div>
       </footer>
-  </body>
+      
+</body>
 </html>
