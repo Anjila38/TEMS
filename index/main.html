@@ -23,58 +23,84 @@
 </head>
 
 <body class="mx-20">
-  <nav class="px-5 pt-4 py-2">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="social-media-icons flex space-x-3">
-        <a href="#"><i class="fa-brands p-2 fa-md fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands p-2 fa-md fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands p-2 fa-md fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands p-2 fa-md fa-linkedin"></i></a>
-      </div>
-      <div class="contact flex space-x-4">
-        <a href="#" class="flex items-center"><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
-          <span class="pl-2 text-sm">+977 9817153553</span></a>
-        <a href="#" class="flex items-center"><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
-          <span class="pl-2 text-sm">support@trailmate.com</span></a>
+  <nav class="px-5 pt-4 py-2 bg-white ">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <!-- Social Media Icons and Contact Info -->
+      <div class="flex justify-between w-full">
+        <div class="social-media-icons flex space-x-3">
+          <a href="#"><i class="fa-brands fa-facebook p-2 fa-md"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram p-2 fa-md"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter p-2 fa-md"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin p-2 fa-md"></i></a>
+        </div>
+        <div class="contact hidden md:flex space-x-4">
+          <a href="#" class="flex items-center">
+            <i class="fa-solid fa-phone" style="color: #f46b5b"></i>
+            <span class="pl-2 text-sm">+977 9817153553</span>
+          </a>
+          <a href="#" class="flex items-center">
+            <i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
+            <span class="pl-2 text-sm">support@trailmate.com</span>
+          </a>
+        </div>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden text-gray-600" id="menu-toggle">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
       </div>
     </div>
   </nav>
   <hr class="custom-hr" />
-  <!-- navbar -->
-
-  <div class="container mx-auto my-4 flex justify-between items-center px-5">
-    <a href="#" class="text-3xl font-bold text-red-400">TrailMate</a>
-
-    <div class="flex items-center space-x-4">
-      <div class="bg-gray-100 p-2 rounded-lg">
-        <i class="fa-solid fa-grip" style="color: #949494"></i>
+  <!-- Navbar -->
+  
+  <div class="container mx-auto my-4 px-5">
+    <div class="flex justify-between items-center flex-wrap">
+      <a href="#" class="text-3xl font-bold text-red-400">TrailMate</a>
+  
+      <div class="lg:flex items-center space-x-4 hidden md:flex">
+        <div class="bg-gray-100 p-2 rounded-lg">
+          <i class="fa-solid fa-grip" style="color: #949494"></i>
+        </div>
+        <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+          <input type="text" placeholder="Search here" class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0" />
+          <i class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"></i>
+        </div>
+        <div>
+          <a href="/index/cart.html">
+            <i class="fa-solid fa-lg fa-bag-shopping px-2" style="color: #000000"></i>
+          </a>
+        </div>
+        <a class="text-red-400 text-sm underline" href="/index/loginpage.html">Sign in</a>
+        <button class="text-white text-sm px-3 py-2 bg-red-400 rounded">
+          Sign Up
+        </button>
       </div>
-      <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-        <input type="text" placeholder="Search here"
-          class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0" /><i
-          class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"></i>
-      </div>
-
-      <div>
-        <a href="/index/cart.html"><i class="fa-solid fa-lg fa-bag-shopping px-2" style="color: #000000"></i></a>
-        
-      </div>
-      <a class="text-red-400 text-sm underline" href="/index/loginpage.html">Sign in</a>
-
-      <button class="text-white text-sm px-3 py-2 bg-red-400 rounded">
-        Sign Up
-      </button>
     </div>
+  
+    
   </div>
-  <div class="pt-4 text-gray-950 text-xs flex justify-center space-x-6">
-    <a href="#"class="text-red-400">Home</a>
-    <a href="/index/about.html">About</a>
-    <a href="/index/category.html">Product</a>
-    <a href="/index/blog.html">Blog</a>
-    <a href="/index/contact.html">Contact</a>
-    <a href="/index/community.html">Our Community</a>
-    <a href="/index/sell_product.html">Sell Products</a>
-  </div>
+  <!-- Navigation Links -->
+    <div id="nav-links" class="pt-4 text-gray-950 text-xs show md:flex md:flex-row md:space-y-0 md:justify-center px-6 hidden flex flex-col justify-start md:space-x-6 space-y-3">
+      <a href="#" class="text-red-400">Home</a>
+      <a href="/index/about.html">About</a>
+      <a href="/index/category.html">Product</a>
+      <a href="/index/blog.html">Blog</a>
+      <a href="/index/contact.html">Contact</a>
+      <a href="/index/community.html">Our Community</a>
+      <a href="/index/sell_product.html">Sell Products</a>
+    </div>
+    
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+    
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+      });
+    </script>
+    
+  
+  
 
   <!-- hero section -->
 
