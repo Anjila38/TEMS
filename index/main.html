@@ -1,83 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trailmate</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trailmate</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/Trailmatelogo-04.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="shortcut icon" href="/images/Trailmatelogo-04.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
-</head>
-
-<body class="mx-20">
-  <nav class="px-5 pt-4 py-2 bg-white ">
-    <div class="container mx-auto flex flex-wrap justify-between items-center">
-      <!-- Social Media Icons and Contact Info -->
-      <div class="flex justify-between w-full">
-        <div class="social-media-icons flex space-x-3">
-          <a href="#"><i class="fa-brands fa-facebook p-2 fa-md"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram p-2 fa-md"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter p-2 fa-md"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin p-2 fa-md"></i></a>
+  <body class="mx-20">
+    <nav class="px-5 pt-4 py-2 bg-white">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center"
+      >
+        <!-- Social Media Icons and Contact Info -->
+        <div class="flex justify-between w-full">
+          <div class="social-media-icons flex space-x-3">
+            <a href="#"><i class="fa-brands fa-facebook p-2 fa-md"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram p-2 fa-md"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter p-2 fa-md"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin p-2 fa-md"></i></a>
+          </div>
+          <div class="contact hidden md:flex space-x-4">
+            <a href="#" class="flex items-center">
+              <i class="fa-solid fa-phone" style="color: #f46b5b"></i>
+              <span class="pl-2 text-sm">+977 9817153553</span>
+            </a>
+            <a href="#" class="flex items-center">
+              <i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
+              <span class="pl-2 text-sm">support@trailmate.com</span>
+            </a>
+          </div>
+          <!-- Mobile Menu Toggle Button -->
+          <button class="md:hidden text-gray-600" id="menu-toggle">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
         </div>
-        <div class="contact hidden md:flex space-x-4">
-          <a href="#" class="flex items-center">
-            <i class="fa-solid fa-phone" style="color: #f46b5b"></i>
-            <span class="pl-2 text-sm">+977 9817153553</span>
-          </a>
-          <a href="#" class="flex items-center">
-            <i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
-            <span class="pl-2 text-sm">support@trailmate.com</span>
-          </a>
+      </div>
+    </nav>
+    <hr class="custom-hr" />
+    <!-- Navbar -->
+
+    <div class="container mx-auto my-4 px-5">
+      <div class="flex justify-between items-center space-y-3 flex-wrap">
+        <a href="#" class="text-3xl font-bold text-red-400">TrailMate</a>
+
+        <div
+          class="flex-wrap space-y-2 items-start md:items-center space-x-2 md:space-x-4 md:flex"
+        >
+          <div
+            class="flex items-center border w-1/3 md:w-max border-gray-300 rounded-lg overflow-hidden"
+          >
+            <input
+              type="text"
+              placeholder="Search here"
+              class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"
+            ></i>
+          </div>
+          <div>
+            <a href="/index/cart.html">
+              <i
+                class="fa-solid fa-lg fa-bag-shopping px-2"
+                style="color: #000000"
+              ></i>
+            </a>
+          </div>
+          <a class="text-red-400 text-sm underline" href="/index/loginpage.html"
+            >Sign in</a
+          >
+          <button class="text-white text-sm px-3 py-2 bg-red-400 rounded">
+            Sign Up
+          </button>
         </div>
-        <!-- Mobile Menu Toggle Button -->
-        <button class="md:hidden text-gray-600" id="menu-toggle">
-          <i class="fa-solid fa-bars fa-lg"></i>
-        </button>
       </div>
     </div>
-  </nav>
-  <hr class="custom-hr" />
-  <!-- Navbar -->
-  
-  <div class="container mx-auto my-4 px-5">
-    <div class="flex justify-between items-center space-y-3 flex-wrap">
-      <a href="#" class="text-3xl font-bold text-red-400">TrailMate</a>
-  
-      <div class="flex-wrap space-y-2 items-start md:items-center space-x-2 md:space-x-4 md:flex">
-        <div class="flex items-center border w-1/3 md:w-max border-gray-300 rounded-lg overflow-hidden">
-          <input type="text" placeholder="Search here" class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0" />
-          <i class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"></i>
-        </div>
-        <div>
-          <a href="/index/cart.html">
-            <i class="fa-solid fa-lg fa-bag-shopping px-2" style="color: #000000"></i>
-          </a>
-        </div>
-        <a class="text-red-400 text-sm underline" href="/index/loginpage.html">Sign in</a>
-        <button class="text-white text-sm px-3 py-2 bg-red-400 rounded">
-          Sign Up
-        </button>
-      </div>
-    </div>
-  
-    
-  </div>
-  <!-- Navigation Links -->
-    <div id="nav-links" class="pt-4 text-gray-950 ps-5 text-xs show md:flex md:flex-row md:space-y-0 md:justify-center px-6 hidden flex flex-col justify-start md:space-x-6 space-y-3">
+    <!-- Navigation Links -->
+    <div
+      id="nav-links"
+      class="pt-4 text-gray-950 ps-5 text-xs show md:flex md:flex-row md:space-y-0 md:justify-center px-6 hidden flex flex-col justify-start md:space-x-6 space-y-3"
+    >
       <a href="#" class="text-red-400">Home</a>
       <a href="/index/about.html">About</a>
       <a href="/index/category.html">Product</a>
@@ -86,510 +123,813 @@
       <a href="/index/community.html">Our Community</a>
       <a href="/index/sell_product.html">Sell Products</a>
     </div>
-    
+
     <script>
-      const menuToggle = document.getElementById('menu-toggle');
-      const navLinks = document.getElementById('nav-links');
-    
-      menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('hidden');
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
       });
     </script>
-    
-  
-  
 
-  <!-- hero section -->
+    <!-- hero section -->
 
-  <div id="sync1" class="owl-carousel owl-theme">
-    <div class="item">
-      <div
-        class="hero-section mx-5 p-5 lg:mx-10 lg:p-10"
-        style="background-image: url('/images/1.jpg'); background-size: cover; background-position: center;"
-      >
-        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold max-w-md"style="font-family: montserrat;">
-          Better Gears for Better Experience
-        </h1>
-        <p class="mt-4 text-sm sm:text-base md:text-lg lg:text-gray-600 max-w-md mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor.
-        </p>
-        <button
-          class="text-white text-xs sm:text-sm px-3 py-2 sm:px-4  font-light bg-red-400 rounded"
+    <div id="sync1" class="owl-carousel owl-theme">
+      <div class="item">
+        <div
+          class="hero-section mx-5 p-5 lg:mx-10 lg:p-10"
+          style="
+            background-image: url('/images/1.jpg');
+            background-size: cover;
+            background-position: center;
+          "
         >
-          Shop Now
-        </button>
+          <h1
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold max-w-md"
+            style="font-family: montserrat"
+          >
+            Better Gears for Better Experience
+          </h1>
+          <p
+            class="mt-4 text-sm sm:text-base md:text-lg lg:text-gray-600 max-w-md mb-5"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <button
+            class="text-white text-xs sm:text-sm px-3 py-2 sm:px-4 font-light bg-red-400 rounded"
+          >
+            Shop Now
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <div
-        class="hero-section mx-5 p-5 lg:mx-10 lg:p-10"
-        style="background-image: url('/images/2.jpg'); background-size: cover; background-position: center;"
-      >
-        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold max-w-md" style="font-family: montserrat;">
-          Better Gears for Better Experience
-        </h1>
-        <p class="mt-4 text-sm sm:text-base md:text-lg lg:text-gray-600 max-w-md mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor.
-        </p>
-        <button
-          class="text-white text-xs sm:text-sm px-3 py-2 sm:px-4 font-light bg-red-400 rounded"
+      <div class="item">
+        <div
+          class="hero-section mx-5 p-5 lg:mx-10 lg:p-10"
+          style="
+            background-image: url('/images/2.jpg');
+            background-size: cover;
+            background-position: center;
+          "
         >
-          Shop Now
-        </button>
-      </div>
-    </div>
-  </div>  
-  
-
-  <!-- category -->
-
-  <div class="title-part mx-5 mt-5 font-semibold text-xl">
-    <h3>Category</h3>
-  </div>
-  <div class="equip-category pt-4 text-gray-950 text-xs mx-5 flex flex-wrap gap-4">
-    <a href="#" class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
-      <img src="/images/trekking-pole.png" alt="Trekking Poles" class="w-5 h-5" />
-      <span>Trekking Poles</span>
-    </a>
-    <a href="#" class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
-      <img src="/images/headlamp.png" alt="HeadLamp" class="w-5 h-5" />
-      <span>HeadLamp</span>
-    </a>
-    <a href="#" class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
-      <img src="/images/hammock.png" alt="Hammock" class="w-5 h-5" />
-      <span>Hammock</span>
-    </a>
-    <a href="#" class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
-      <img src="/images/gaiter.png" alt="Gaiters" class="w-5 h-5" />
-      <span>Gaiter</span>
-    </a>
-    <a href="#" class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
-      <img src="/images/sunglasses.png" alt="Sunglasses" class="w-5 h-5" />
-      <span>Sunglasses</span>
-    </a>
-    <a href="#" class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
-      <img src="/images/other.png" alt="Others" class="w-5 h-5" />
-      <span>Other Categories</span>
-    </a>
-  </div>
-
-  <div class="container mt-16 text-center">
-    <h1 class="sub-headings">New Arrivals</h1>
-    <p class="max-w-xs text-xs my-3 mx-auto text-gray-400">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor.
-    </p>
-  </div>
-  <div class="card flex justify-between items-center mt-10">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-lg mx-auto">
-      <!-- Card 1 -->
-      <div class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative h-96 flex flex-col">
-        <span class="absolute top-2 right-2 bg-red-400 text-white text-xs font-bold rounded-full px-3 py-2">NEW</span>
-        <!-- Image Placeholder -->
-        <img src="https://via.placeholder.com/600x400" alt="Image" class="w-full h-80 mb-4 object-cover" />
-        <div class="text-center">
-          <p class="text-sm my-2">Hammocks</p>
-          <p class="text-red-500 text-sm font-semibold mb-4">$299</p>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative h-96 flex flex-col">
-        <span class="absolute top-2 right-2 bg-red-400 text-white text-xs font-bold rounded-full px-3 py-2">NEW</span>
-        <!-- Image Placeholder -->
-        <img src="https://via.placeholder.com/600x400" alt="Image" class="w-full h-80 mb-4 object-cover" />
-        <div class="text-center">
-          <p class="text-sm my-2">Headlights</p>
-          <p class="text-red-500 text-sm font-semibold mb-4">$299</p>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative h-96 flex flex-col">
-        <span class="absolute top-2 right-2 bg-red-400 text-white text-xs font-bold rounded-full px-3 py-2">NEW</span>
-        <!-- Image Placeholder -->
-        <img src="https://via.placeholder.com/600x400" alt="Image" class="w-full h-80 mb-4 object-cover" />
-        <div class="text-center">
-          <p class="text-sm my-2">Helmets</p>
-          <p class="text-red-500 text-sm mb-4 font-semibold">$299</p>
+          <h1
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold max-w-md"
+            style="font-family: montserrat"
+          >
+            Better Gears for Better Experience
+          </h1>
+          <p
+            class="mt-4 text-sm sm:text-base md:text-lg lg:text-gray-600 max-w-md mb-5"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <button
+            class="text-white text-xs sm:text-sm px-3 py-2 sm:px-4 font-light bg-red-400 rounded"
+          >
+            Shop Now
+          </button>
         </div>
       </div>
     </div>
-  </div>
-  <!-- featured -->
-  <div class="container mt-16 mx-auto text-center">
-    <h1 class="sub-headings">Featured Products</h1>
-    <p class="max-w-xs my-3 text-xs mx-auto text-gray-400">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor.
-    </p>
-  </div>
-  <!-- timer cards -->
 
-  <div class="flex mt-10 justify-between items-center mx-5">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-screen-xl">
-      <div class="ml-5 bg-white rounded-3xl border border-gray-400 p-6 flex flex-col items-center">
-        <h2 class="text-2xl my-3">Knives and Multi-tool</h2>
-        <div class="flex items-center space-x-4 mb-4">
-          <p class="text-gray-400 line-through">$29.99</p>
-          <span class="text-red-500">- $19.99</span>
-        </div>
-        <img src="https://via.placeholder.com/600x400" alt="Image" class="w-80 h-60 mb-5 object-cover" />
-        <div class="flex space-x-4 mt-3 border-gray-500" id="timer-left"></div>
-      </div>
-  
-      <!-- Cards Container -->
-      <div class="flex flex-col w-full md:pr-5 md:mr-5 space-y-6">
-        <!-- First Card -->
-        <div class="border border-gray-400 bg-white rounded-br-2xl rounded-tr-2xl flex-1 flex">
-          <div class="w-1/3 mr-4">
-            <img src="https://via.placeholder.com/500x700" alt="Product Image" class="object-cover h-full w-full" />
+    <!-- category -->
+
+    <div class="title-part mx-5 mt-5 font-semibold text-xl">
+      <h3>Category</h3>
+    </div>
+    <div
+      class="equip-category pt-4 text-gray-950 text-xs mx-5 flex flex-wrap gap-4"
+    >
+      <a
+        href="#"
+        class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap"
+      >
+        <img
+          src="/images/trekking-pole.png"
+          alt="Trekking Poles"
+          class="w-5 h-5"
+        />
+        <span>Trekking Poles</span>
+      </a>
+      <a
+        href="#"
+        class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap"
+      >
+        <img src="/images/headlamp.png" alt="HeadLamp" class="w-5 h-5" />
+        <span>HeadLamp</span>
+      </a>
+      <a
+        href="#"
+        class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap"
+      >
+        <img src="/images/hammock.png" alt="Hammock" class="w-5 h-5" />
+        <span>Hammock</span>
+      </a>
+      <a
+        href="#"
+        class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap"
+      >
+        <img src="/images/gaiter.png" alt="Gaiters" class="w-5 h-5" />
+        <span>Gaiter</span>
+      </a>
+      <a
+        href="#"
+        class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap"
+      >
+        <img src="/images/sunglasses.png" alt="Sunglasses" class="w-5 h-5" />
+        <span>Sunglasses</span>
+      </a>
+      <a
+        href="#"
+        class="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap"
+      >
+        <img src="/images/other.png" alt="Others" class="w-5 h-5" />
+        <span>Other Categories</span>
+      </a>
+    </div>
+
+    <div class="container mt-16 text-center">
+      <h1 class="sub-headings">New Arrivals</h1>
+      <p class="max-w-xs text-xs my-3 mx-auto text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor.
+      </p>
+    </div>
+    <div class="card flex justify-between items-center mt-10">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-lg mx-auto"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative h-96 flex flex-col"
+        >
+          <span
+            class="absolute top-2 right-2 bg-red-400 text-white text-xs font-bold rounded-full px-3 py-2"
+            >NEW</span
+          >
+          <!-- Image Placeholder -->
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Image"
+            class="w-full h-80 mb-4 object-cover"
+          />
+          <div class="text-center">
+            <p class="text-sm my-2">Hammocks</p>
+            <p class="text-red-500 text-sm font-semibold mb-4">$299</p>
           </div>
-          <div class="flex-1">
-            <div class="bg-red-400 mt-4 text-white text-xs px-4 py-2 rounded-md inline-block mb-2">
-              Limited Offer
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative h-96 flex flex-col"
+        >
+          <span
+            class="absolute top-2 right-2 bg-red-400 text-white text-xs font-bold rounded-full px-3 py-2"
+            >NEW</span
+          >
+          <!-- Image Placeholder -->
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Image"
+            class="w-full h-80 mb-4 object-cover"
+          />
+          <div class="text-center">
+            <p class="text-sm my-2">Headlights</p>
+            <p class="text-red-500 text-sm font-semibold mb-4">$299</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative h-96 flex flex-col"
+        >
+          <span
+            class="absolute top-2 right-2 bg-red-400 text-white text-xs font-bold rounded-full px-3 py-2"
+            >NEW</span
+          >
+          <!-- Image Placeholder -->
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Image"
+            class="w-full h-80 mb-4 object-cover"
+          />
+          <div class="text-center">
+            <p class="text-sm my-2">Helmets</p>
+            <p class="text-red-500 text-sm mb-4 font-semibold">$299</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- featured -->
+    <div class="container mt-16 mx-auto text-center">
+      <h1 class="sub-headings">Featured Products</h1>
+      <p class="max-w-xs my-3 text-xs mx-auto text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor.
+      </p>
+    </div>
+    <!-- timer cards -->
+
+    <div class="flex mt-10 justify-between items-center mx-5">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-screen-xl">
+        <div
+          class="ml-5 bg-white rounded-3xl border border-gray-400 p-6 flex flex-col items-center"
+        >
+          <h2 class="text-2xl my-3">Knives and Multi-tool</h2>
+          <div class="flex items-center space-x-4 mb-4">
+            <p class="text-gray-400 line-through">$29.99</p>
+            <span class="text-red-500">- $19.99</span>
+          </div>
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Image"
+            class="w-80 h-60 mb-5 object-cover"
+          />
+          <div
+            class="flex space-x-4 mt-3 border-gray-500"
+            id="timer-left"
+          ></div>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="flex flex-col w-full md:pr-5 md:mr-5 space-y-6">
+          <!-- First Card -->
+          <div
+            class="border border-gray-400 bg-white rounded-br-2xl rounded-tr-2xl flex-1 flex"
+          >
+            <div class="w-1/3 mr-4">
+              <img
+                src="https://via.placeholder.com/500x700"
+                alt="Product Image"
+                class="object-cover h-full w-full"
+              />
             </div>
-            <h2 class="text-gray-800 text-xl mb-2">Product Name</h2>
-            <div class="flex items-center space-x-4 mb-4">
+            <div class="flex-1">
+              <div
+                class="bg-red-400 mt-4 text-white text-xs px-4 py-2 rounded-md inline-block mb-2"
+              >
+                Limited Offer
+              </div>
+              <h2 class="text-gray-800 text-xl mb-2">Product Name</h2>
+              <div class="flex items-center space-x-4 mb-4">
+                <p class="text-gray-400 line-through">$29.99</p>
+                <span class="text-red-500">- $19.99</span>
+              </div>
+              <div
+                class="flex space-x-4 mt-3 border-gray-500"
+                id="timer-right-1"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Second Card -->
+          <div
+            class="border border-gray-400 bg-white rounded-br-2xl rounded-tr-2xl flex-1 flex"
+          >
+            <div class="w-1/3 mr-4">
+              <img
+                src="https://via.placeholder.com/500x700"
+                alt="Product Image"
+                class="object-cover h-full w-full"
+              />
+            </div>
+            <div class="flex-1">
+              <div
+                class="bg-red-400 mt-4 text-white text-xs px-4 py-2 rounded-md inline-block mb-2"
+              >
+                Limited Offer
+              </div>
+              <h2 class="text-gray-800 text-xl mb-2">Product Name</h2>
+              <div class="flex items-center space-x-4 mb-4">
+                <p class="text-gray-400 line-through">$29.99</p>
+                <span class="text-red-500">- $19.99</span>
+              </div>
+              <div
+                class="flex space-x-4 mt-3 border-gray-500"
+                id="timer-right-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Collections -->
+    <div class="container mt-16 mx-auto text-center">
+      <h1 class="sub-headings">Our Collections</h1>
+      <p class="max-w-xs my-3 text-xs mx-auto text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor.
+      </p>
+    </div>
+    <div
+      class="collection-card mx-5 my-5 grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 md:h-96 h-auto"
+    >
+      <!-- Collection Card 1 -->
+      <div
+        class="mt-5 relative rounded-2xl p-8 flex justify-center items-center"
+      >
+        <img
+          src="https://via.placeholder.com/1000"
+          alt="Trail Running Shoes"
+          class="absolute inset-0 object-cover w-full h-full rounded-3xl opacity-50"
+        />
+        <div
+          class="bg-white max-w-xs p-4 text-center rounded-md shadow-md relative z-10"
+        >
+          <h3 class="text-xl font-bold">Trail Running Shoes</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod.
+          </p>
+        </div>
+      </div>
+
+      <!-- Collection Card 2 -->
+      <div
+        class="mt-5 relative rounded-2xl p-8 flex justify-center items-center"
+      >
+        <img
+          src="https://via.placeholder.com/1000"
+          alt="Trail Running Shoes"
+          class="absolute inset-0 object-cover w-full h-full rounded-3xl opacity-50"
+        />
+        <div
+          class="bg-white max-w-xs p-4 rounded-md text-center shadow-md relative z-10"
+        >
+          <h3 class="text-xl font-bold">Trail Running Shoes</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="sub-headings mt-10 mx-5 mb-7">Flash Sale</h2>
+
+      <div class="grid grid-cols-1 mx-5 lg:grid-cols-4 gap-6">
+        <!-- Flash Sale Left Promo Card -->
+        <div
+          class="bg-red-400 text-white p-6 rounded-lg flex flex-col justify-normal"
+        >
+          <h3 class="text-2xl text-center">Up to 30% Off!</h3>
+          <img class="my-4" src="https://via.placeholder.com/200" alt="" />
+          <p class="text-lg text-center mt-5 mb-2">Sale End In:</p>
+
+          <div
+            class="flex space-x-2 w-full border-gray-50 flex-wrap items-center justify-center"
+            id="timer-left-2"
+          ></div>
+        </div>
+
+        <!-- Flash Sale Right Product Cards -->
+        <!-- Product Card 1 -->
+
+        <!-- Card 1 -->
+        <div
+          class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative flex flex-col w-full"
+        >
+          <span
+            class="absolute top-2 right-2 bg-red-400 text-white text-xs rounded-md px-3 py-2"
+            >25% OFF</span
+          >
+          <!-- Image Placeholder -->
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Image"
+            class="w-full h-80 object-cover"
+          />
+          <div class="text-center">
+            <p class="text-lg mb-2 mt-4">Hammocks</p>
+            <div class="flex justify-center space-x-4 mb-4">
               <p class="text-gray-400 line-through">$29.99</p>
               <span class="text-red-500">- $19.99</span>
             </div>
-            <div class="flex space-x-4 mt-3 border-gray-500" id="timer-right-1"></div>
+            <div class="relative w-full px-4 pb-4">
+              <span
+                class="absolute text-xs left-1 top-1/2 transform -translate-y-1/2 pl-4"
+                >Available: 10</span
+              >
+              <span
+                class="absolute text-xs right-1 top-1/2 transform -translate-y-1/2 pr-4"
+                >Sold: 5</span
+              >
+              <!-- Content inside the container -->
+            </div>
+            <div id="myProgress" class="text-center mb-4">
+              <div id="myBar"></div>
+            </div>
           </div>
         </div>
-  
-        <!-- Second Card -->
-        <div class="border border-gray-400 bg-white rounded-br-2xl rounded-tr-2xl flex-1 flex">
-          <div class="w-1/3 mr-4">
-            <img src="https://via.placeholder.com/500x700" alt="Product Image" class="object-cover h-full w-full" />
-          </div>
-          <div class="flex-1">
-            <div class="bg-red-400 mt-4 text-white text-xs px-4 py-2 rounded-md inline-block mb-2">
-              Limited Offer
-            </div>
-            <h2 class="text-gray-800 text-xl mb-2">Product Name</h2>
-            <div class="flex items-center space-x-4 mb-4">
+        <!-- Card 2 -->
+        <div
+          class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative flex flex-col w-full"
+        >
+          <span
+            class="absolute top-2 right-2 bg-red-400 text-white text-xs rounded-md px-3 py-2"
+            >25% OFF</span
+          >
+          <!-- Image Placeholder -->
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Image"
+            class="w-full h-80 object-cover"
+          />
+          <div class="text-center">
+            <p class="text-lg mb-2 mt-4">Hammocks</p>
+            <div class="flex justify-center space-x-4 mb-4">
               <p class="text-gray-400 line-through">$29.99</p>
               <span class="text-red-500">- $19.99</span>
             </div>
-            <div class="flex space-x-4 mt-3 border-gray-500" id="timer-right-2"></div>
+            <div class="relative w-full px-4 pb-4">
+              <span
+                class="absolute text-xs left-1 top-1/2 transform -translate-y-1/2 pl-4"
+                >Available: 10</span
+              >
+              <span
+                class="absolute text-xs right-1 top-1/2 transform -translate-y-1/2 pr-4"
+                >Sold: 5</span
+              >
+              <!-- Content inside the container -->
+            </div>
+            <div id="myProgress" class="text-center mb-4">
+              <div id="myBar"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative flex flex-col w-full"
+        >
+          <span
+            class="absolute top-2 right-2 bg-red-400 text-white text-xs rounded-md px-3 py-2"
+            >25% OFF</span
+          >
+          <!-- Image Placeholder -->
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Image"
+            class="w-full h-80 object-cover"
+          />
+          <div class="text-center">
+            <p class="text-lg mb-2 mt-4">Hammocks</p>
+            <div class="flex justify-center space-x-4 mb-4">
+              <p class="text-gray-400 line-through">$29.99</p>
+              <span class="text-red-500">- $19.99</span>
+            </div>
+            <div class="relative w-full px-4 pb-4">
+              <span
+                class="absolute text-xs left-1 top-1/2 transform -translate-y-1/2 pl-4"
+                >Available: 10</span
+              >
+              <span
+                class="absolute text-xs right-1 top-1/2 transform -translate-y-1/2 pr-4"
+                >Sold: 5</span
+              >
+              <!-- Content inside the container -->
+            </div>
+            <div id="myProgress" class="text-center mb-4">
+              <div id="myBar"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Our Collections -->
-  <div class="container mt-16 mx-auto text-center">
-    <h1 class="sub-headings">Our Collections</h1>
-    <p class="max-w-xs my-3 text-xs mx-auto text-gray-400">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor.
-    </p>
-  </div>
-  <div class="collection-card mx-5 my-5 grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 md:h-96 h-auto">
-    <!-- Collection Card 1 -->
-    <div class="mt-5 relative rounded-2xl p-8 flex justify-center items-center">
-      <img src="https://via.placeholder.com/1000" alt="Trail Running Shoes"
-        class="absolute inset-0 object-cover w-full h-full rounded-3xl opacity-50" />
-      <div class="bg-white max-w-xs p-4 text-center rounded-md shadow-md relative z-10">
-        <h3 class="text-xl font-bold">Trail Running Shoes</h3>
-        <p class="text-gray-600 text-sm mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod.
+
+    <!-- Top Rated Product -->
+
+    <div class="top-rated-section max-w-7xl mx-auto mt-16 px-4 py-8 relative">
+      <h2 class="text-4xl font-bold mb-10 sub-headings">Top Rated Products</h2>
+      <div class="owl-carousel top-rated-carousel">
+        <!-- Card 1 -->
+        <div class="item">
+          <div
+            class="bg-white border border-gray-400 rounded-xl relative flex flex-col"
+          >
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Image"
+              class="w-full p-5 rounded-3xl object-cover"
+            />
+            <div class="text-center">
+              <p class="text-md my-2">Trekking Poles</p>
+              <p class="text-red-500 text-sm font-semibold mb-2">$250</p>
+              <div class="flex justify-items-center text-gray-500">
+                <p class="md:ml-10 mx-2 md:mr-5">5.0</p>
+
+                <img
+                  src="/images/stars.png"
+                  alt="Star"
+                  class="object-contain w-2 h-2 object-left md:h-5"
+                />
+              </div>
+              <button
+                class="text-white text-xs my-3 px-2 py-1 md:px-3 md:py-2 font-light bg-red-400 rounded"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="item">
+          <div
+            class="bg-white border border-gray-400 rounded-xl relative flex flex-col"
+          >
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Image"
+              class="w-full p-5 rounded-3xl object-cover"
+            />
+            <div class="text-center">
+              <p class="text-md my-2">Trekking Poles</p>
+              <p class="text-red-500 text-sm font-semibold mb-2">$250</p>
+              <div class="flex justify-items-center text-gray-500">
+                <p class="md:ml-10 mx-2 md:mr-5">5.0</p>
+
+                <img
+                  src="/images/stars.png"
+                  alt="Star"
+                  class="object-contain w-2 h-2 object-left md:h-5"
+                />
+              </div>
+              <button
+                class="text-white text-xs my-3 px-2 py-1 md:px-3 md:py-2 font-light bg-red-400 rounded"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blogs -->
+
+    <div class="container mt-10 mb-8 mx-auto text-center">
+      <h1 class="sub-headings">Blogs</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Blog Card 1 -->
+      <div
+        class="bg-white border border-gray-300 rounded-xl relative h-96 flex flex-col"
+      >
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Image"
+          class="rounded-xl w-full h-80 mb-4 object-cover"
+        />
+        <div class="mx-5">
+          <p class="text-sm font-medium mt-2 mb-4">
+            We Offer the Best Quality Product to Our Customers
+          </p>
+          <p class="text-xs mb-4 text-gray-500">
+            by <span class="text-red-500">Admin</span>, 12 Jan 2021
+          </p>
+        </div>
+      </div>
+      <!-- Blog Card 2 -->
+      <div
+        class="bg-white border border-gray-300 rounded-xl relative h-96 flex flex-col"
+      >
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Image"
+          class="rounded-xl w-full h-80 mb-4 object-cover"
+        />
+        <div class="mx-5">
+          <p class="text-sm font-medium mt-2 mb-4">
+            We Offer the Best Quality Product to Our Customers
+          </p>
+          <p class="text-xs mb-4 text-gray-500">
+            by <span class="text-red-500">Admin</span>, 12 Jan 2021
+          </p>
+        </div>
+      </div>
+      <!-- Blog Card 3 -->
+      <div
+        class="bg-white border border-gray-300 rounded-xl relative h-96 flex flex-col"
+      >
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Image"
+          class="rounded-xl w-full h-80 mb-4 object-cover"
+        />
+        <div class="mx-5">
+          <p class="text-sm font-medium mt-2 mb-4">
+            We Offer the Best Quality Product to Our Customers
+          </p>
+          <p class="text-xs mb-4 text-gray-500">
+            by <span class="text-red-500">Admin</span>, 12 Jan 2021
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div
+      class="newsletter-section -mx-20 mt-28 py-12"
+      style="
+        background-image: url('/images/newsletter_bg.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="max-w-4xl mx-auto pt-8">
+        <h2
+          class="text-3xl text-white font-bold mb-3"
+          style="font-family: montserrat"
+        >
+          Join our newsletter now!
+        </h2>
+        <p class="text-xs mb-9 text-gray-50">
+          Register now and get our latest updates and promos.
+        </p>
+        <div class="flex justify-normal">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="px-4 text-xs py-3 w-80 text-gray-500 rounded-l-lg focus:outline-none"
+          />
+          <button
+            class="px-6 py-3 bg-red-500 font-medium text-white rounded-r-lg text-sm"
+          >
+            Join
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- partners -->
+    <div class="container mx-5 mt-16 flex justify-center">
+      <div class="flex space-x-4 mx-5">
+        <p
+          class="text-2xl text-gray-400 font-medium"
+          style="font-family: playfair display"
+        >
+          Trekus
+        </p>
+      </div>
+      <div class="contact flex space-x-4 mx-5">
+        <p class="text-2xl font-medium text-gray-400">Travelpartner</p>
+      </div>
+      <div class="flex space-x-4 mx-5">
+        <p
+          class="text-2xl text-gray-400 font-normal"
+          style="font-family: vidaloka"
+        >
+          TravelVan
+        </p>
+      </div>
+      <div class="flex space-x-4 mx-5">
+        <p
+          class="text-2xl text-gray-400 font-semibold"
+          style="font-family: montserrat"
+        >
+          HIKE
+        </p>
+      </div>
+      <div class="flex space-x-4 mx-5">
+        <p
+          class="text-2xl text-gray-400 font-semibold"
+          style="font-family: 'Nunito', sans-serif"
+        >
+          Hillspal
+        </p>
+      </div>
+      <div class="flex space-x-4 mx-5">
+        <p
+          class="text-2xl text-gray-400 font-semibold"
+          style="font-family: 'Inter', sans-serif"
+        >
+          TrekMate
         </p>
       </div>
     </div>
 
-    <!-- Collection Card 2 -->
-    <div class="mt-5 relative rounded-2xl p-8 flex justify-center items-center">
-      <img src="https://via.placeholder.com/1000" alt="Trail Running Shoes"
-        class="absolute inset-0 object-cover w-full h-full rounded-3xl opacity-50" />
-      <div class="bg-white max-w-xs p-4 rounded-md text-center shadow-md relative z-10">
-        <h3 class="text-xl font-bold">Trail Running Shoes</h3>
-        <p class="text-gray-600 text-sm mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h2 class="sub-headings mt-10 mx-5 mb-7">Flash Sale</h2>
+    <style>
+      .footer {
+        background: #f46b5b0d;
+      }
+    </style>
 
-    <div class="grid grid-cols-1 mx-5 lg:grid-cols-4 gap-6">
-      <!-- Flash Sale Left Promo Card -->
-      <div class="bg-red-400 text-white p-6 rounded-lg flex flex-col justify-normal">
-        <h3 class="text-2xl text-center">Up to 30% Off!</h3>
-        <img class="my-4" src="https://via.placeholder.com/200" alt="" />
-        <p class="text-lg text-center mt-5 mb-2">Sale End In:</p>
-
-        <div class="flex space-x-2 w-full border-gray-50 flex-wrap items-center justify-center" id="timer-left-2"></div>
-      </div>
-
-      <!-- Flash Sale Right Product Cards -->
-      <!-- Product Card 1 -->
-
-      <!-- Card 1 -->
-      <div class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative flex flex-col w-full">
-        <span class="absolute top-2 right-2 bg-red-400 text-white text-xs rounded-md px-3 py-2">25% OFF</span>
-        <!-- Image Placeholder -->
-        <img src="https://via.placeholder.com/600x400" alt="Image" class="w-full h-80 object-cover" />
-        <div class="text-center">
-          <p class="text-lg mb-2 mt-4">Hammocks</p>
-          <div class="flex justify-center space-x-4 mb-4">
-            <p class="text-gray-400 line-through">$29.99</p>
-            <span class="text-red-500">- $19.99</span>
-          </div>
-          <div class="relative w-full px-4 pb-4">
-            <span class="absolute text-xs left-1 top-1/2 transform -translate-y-1/2 pl-4">Available: 10</span>
-            <span class="absolute text-xs right-1 top-1/2 transform -translate-y-1/2 pr-4">Sold: 5</span>
-            <!-- Content inside the container -->
-          </div>
-          <div id="myProgress" class="text-center mb-4">
-            <div id="myBar"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative flex flex-col w-full">
-        <span class="absolute top-2 right-2 bg-red-400 text-white text-xs rounded-md px-3 py-2">25% OFF</span>
-        <!-- Image Placeholder -->
-        <img src="https://via.placeholder.com/600x400" alt="Image" class="w-full h-80 object-cover" />
-        <div class="text-center">
-          <p class="text-lg mb-2 mt-4">Hammocks</p>
-          <div class="flex justify-center space-x-4 mb-4">
-            <p class="text-gray-400 line-through">$29.99</p>
-            <span class="text-red-500">- $19.99</span>
-          </div>
-          <div class="relative w-full px-4 pb-4">
-            <span class="absolute text-xs left-1 top-1/2 transform -translate-y-1/2 pl-4">Available: 10</span>
-            <span class="absolute text-xs right-1 top-1/2 transform -translate-y-1/2 pr-4">Sold: 5</span>
-            <!-- Content inside the container -->
-          </div>
-          <div id="myProgress" class="text-center mb-4">
-            <div id="myBar"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative flex flex-col w-full">
-        <span class="absolute top-2 right-2 bg-red-400 text-white text-xs rounded-md px-3 py-2">25% OFF</span>
-        <!-- Image Placeholder -->
-        <img src="https://via.placeholder.com/600x400" alt="Image" class="w-full h-80 object-cover" />
-        <div class="text-center">
-          <p class="text-lg mb-2 mt-4">Hammocks</p>
-          <div class="flex justify-center space-x-4 mb-4">
-            <p class="text-gray-400 line-through">$29.99</p>
-            <span class="text-red-500">- $19.99</span>
-          </div>
-          <div class="relative w-full px-4 pb-4">
-            <span class="absolute text-xs left-1 top-1/2 transform -translate-y-1/2 pl-4">Available: 10</span>
-            <span class="absolute text-xs right-1 top-1/2 transform -translate-y-1/2 pr-4">Sold: 5</span>
-            <!-- Content inside the container -->
-          </div>
-          <div id="myProgress" class="text-center mb-4">
-            <div id="myBar"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Top Rated Product -->
-
-  <div class="top-rated-section max-w-7xl mx-auto mt-16 px-4 py-8 relative">
-    <h2 class="text-4xl font-bold mb-10 sub-headings">Top Rated Products</h2>
-    <div class="owl-carousel top-rated-carousel">
-      <!-- Card 1 -->
-      <div class="item">
-        <div class="bg-white border border-gray-400 rounded-xl relative flex flex-col">
-          <img src="https://via.placeholder.com/300" alt="Image" class="w-full p-5 rounded-3xl object-cover" />
-          <div class="text-center">
-            <p class="text-md my-2">Trekking Poles</p>
-            <p class="text-red-500 text-sm font-semibold mb-2">$250</p>
-            <div class="flex justify-items-center text-gray-500">
-              <p class="md:ml-10 mx-2 md:mr-5">5.0</p>
-             
-              <img src="/images/stars.png" alt="Star" class="object-contain w-2 h-2 object-left md:h-5" />
-            </div>
-            <button class="text-white text-xs my-3 px-2 py-1 md:px-3 md:py-2 font-light bg-red-400 rounded">
-              Add to cart
-            </button>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Card 2 -->
-      <div class="item">
-        <div class="bg-white border border-gray-400 rounded-xl relative flex flex-col">
-          <img src="https://via.placeholder.com/300" alt="Image" class="w-full p-5 rounded-3xl object-cover" />
-          <div class="text-center">
-            <p class="text-md my-2">Trekking Poles</p>
-            <p class="text-red-500 text-sm font-semibold mb-2">$250</p>
-            <div class="flex justify-items-center text-gray-500">
-              <p class="md:ml-10 mx-2 md:mr-5">5.0</p>
-             
-              <img src="/images/stars.png" alt="Star" class="object-contain w-2 h-2 object-left md:h-5" />
-            </div>
-            <button class="text-white text-xs my-3 px-2 py-1 md:px-3 md:py-2 font-light bg-red-400 rounded">
-              Add to cart
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- blogs -->
-
-  <div class="container  mt-10 mb-8 mx-auto text-center">
-    <h1 class="sub-headings">Blogs</h1>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- Blog Card 1 -->
-    <div class="bg-white border border-gray-300 rounded-xl relative h-96 flex flex-col">
-      
-      <img src="https://via.placeholder.com/600x400" alt="Image" class="rounded-xl w-full h-80 mb-4 object-cover" />
-      <div class="mx-5">
-        <p class="text-sm font-medium mt-2 mb-4">We Offer the Best Quality Product to Our Customers</p>
-        <p class="text-xs mb-4 text-gray-500">by <span class="text-red-500 ">Admin</span>, 12 Jan 2021</p>
-      </div>
-    </div>
-    <!-- Blog Card 2 -->
-    <div class="bg-white border border-gray-300 rounded-xl relative h-96 flex flex-col">
-      
-      <img src="https://via.placeholder.com/600x400" alt="Image" class="rounded-xl w-full h-80 mb-4 object-cover" />
-      <div class="mx-5">
-        <p class="text-sm font-medium mt-2 mb-4">We Offer the Best Quality Product to Our Customers</p>
-        <p class="text-xs mb-4 text-gray-500">by <span class="text-red-500 ">Admin</span>, 12 Jan 2021</p>
-      </div>
-    </div>
-    <!-- Blog Card 3 -->
-    <div class="bg-white border border-gray-300 rounded-xl relative h-96 flex flex-col">
-      
-      <img src="https://via.placeholder.com/600x400" alt="Image" class="rounded-xl w-full h-80 mb-4 object-cover" />
-      <div class="mx-5">
-        <p class="text-sm font-medium mt-2 mb-4">We Offer the Best Quality Product to Our Customers</p>
-        <p class="text-xs mb-4 text-gray-500">by <span class="text-red-500 ">Admin</span>, 12 Jan 2021</p>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <!-- Newsletter Section -->
-  <div 
-  class="newsletter-section -mx-20 mt-28 py-12" 
-  style="background-image: url('/images/newsletter_bg.jpg'); background-size: cover; background-position: center;">
-  <div class="max-w-4xl mx-auto pt-8">
-    <h2 class="text-3xl text-white font-bold mb-3" style="font-family: montserrat;">Join our newsletter now!</h2>
-    <p class="text-xs mb-9 text-gray-50"">Register now and get our latest updates and promos.</p>
-    <div class="flex justify-normal">
-      <input 
-        type="email" 
-        placeholder="Enter your email"
-        class="px-4 text-xs py-3 w-80 text-gray-500 rounded-l-lg focus:outline-none" />
-      <button 
-        class="px-6 py-3 bg-red-500 font-medium text-white rounded-r-lg text-sm">
-        Join
-      </button>
-    </div>
-  </div>
-</div>
-
-
-  <!-- partners -->
-  <div class="container mx-5  mt-16 flex justify-center ">
-    <div class="flex space-x-4 mx-5 ">
-      <p class="text-2xl text-gray-400 font-medium" style="font-family: playfair display;">Trekus</p>
-    </div>
-    <div class="contact flex space-x-4 mx-5">
-      <p class="text-2xl font-medium text-gray-400">Travelpartner</p>
-    </div>
-    <div class="flex space-x-4 mx-5">
-      <p class="text-2xl text-gray-400 font-normal" style="font-family: vidaloka;">TravelVan</p>
-    </div>
-    <div class="flex space-x-4 mx-5">
-      <p class="text-2xl text-gray-400 font-semibold" style="font-family: montserrat;">HIKE</p>
-    </div>
-    <div class="flex space-x-4 mx-5">
-      <p class="text-2xl text-gray-400 font-semibold" style='font-family: "Nunito", sans-serif;''>Hillspal</p>
-  </div>
-  <div class="flex space-x-4 mx-5">
-    <p class="text-2xl text-gray-400 font-semibold" style=' font-family: "Inter" , sans-serif;''>TrekMate</p>
-    </div>
-  </div>
-
-  <style>
-    .footer {
-      background: #F46B5B0D;
-      
-    }
-  </style>
-
-    <footer class=" footer  -mx-20 px-20 w-100% mt-16 text-gray-800 py-16">
-      <div class=" px-4 sm:px-6 lg:px-8">
-  
-  
+    <footer class="footer -mx-20 px-20 w-100% mt-16 text-gray-800 py-16">
+      <div class="px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between">
-  
           <div class="w-1/3">
             <h2 class="text-xl font-bold mb-4">TrailMate</h2>
-            <p class="text-gray-500 mb-6 text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor.</p>
+            <p class="text-gray-500 mb-6 text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
             <div class="flex space-x-4">
-              <a href="#" class="text-white hover:text-gray-800 bg-red-300 px-1 rounded"><i
-                  class="fab fa-sm fa-instagram"></i></a>
-              <a href="#" class="text-white rounded hover:text-gray-800 bg-red-300 px-1"><i
-                  class="fab fa-sm fa-twitter"></i></a>
-              <a href="#" class="text-white rounded hover:text-gray-800 bg-red-300 px-1"><i
-                  class="fab fa-sm fa-facebook"></i></a>
+              <a
+                href="#"
+                class="text-white hover:text-gray-800 bg-red-300 px-1 rounded"
+                ><i class="fab fa-sm fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-white rounded hover:text-gray-800 bg-red-300 px-1"
+                ><i class="fab fa-sm fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="text-white rounded hover:text-gray-800 bg-red-300 px-1"
+                ><i class="fab fa-sm fa-facebook"></i
+              ></a>
             </div>
           </div>
-  
-  
+
           <div class="justify-items-end grid grid-cols-3 gap-6">
-  
             <div>
-              <h3 class="text-md font-semibold mb-4 ">Company</h3>
+              <h3 class="text-md font-semibold mb-4">Company</h3>
               <ul class="space-y-3 text-xs">
-                <li><a href="/index/about.html" class="text-gray-600 hover:text-gray-800">About</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-gray-800">Products</a></li>
-                <li><a href="/index/contact.html" class="text-gray-600 hover:text-gray-800">Contact</a></li>
-                <li><a href="/index/blog.html" class="text-gray-600 hover:text-gray-800">Blog</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-gray-800">Careers</a></li>
+                <li>
+                  <a
+                    href="/index/about.html"
+                    class="text-gray-600 hover:text-gray-800"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/index/contact.html"
+                    class="text-gray-600 hover:text-gray-800"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/index/blog.html"
+                    class="text-gray-600 hover:text-gray-800"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Careers</a
+                  >
+                </li>
               </ul>
             </div>
-  
-  
+
             <div>
               <h3 class="text-md mr-8 font-semibold mb-4">Information</h3>
               <ul class="space-y-3 text-xs">
-                <li><a href="#" class="text-gray-600 hover:text-gray-800">Help Center</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-gray-800">Payment Methods</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-gray-800">Return & Refund</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a></li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Help Center</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Payment Methods</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Return & Refund</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Privacy Policy</a
+                  >
+                </li>
               </ul>
             </div>
-  
-  
+
             <div>
               <h3 class="text-md font-semibold mb-4">Contact</h3>
               <ul class="space-y-3 text-xs">
-                <li><a href="#" class="flex items-center"><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
-                    <span class="pl-2 text-xs">+977 9817153553</span></a></li>
-                <li><a href="#" class="flex items-center"><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
-                    <span class="pl-2 text-xs">support@trkmate.com</span></a></li>
+                <li>
+                  <a href="#" class="flex items-center"
+                    ><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
+                    <span class="pl-2 text-xs">+977 9817153553</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center"
+                    ><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
+                    <span class="pl-2 text-xs">support@trkmate.com</span></a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
-  
-  
+
         <div class="flex justify-between footer-bottom mt-20 w-full">
-  
-          <p class="text-left flex justify-start text-gray-600 text-xs">Copyright © 2021 Trailmate. All Rights Reserved
+          <p class="text-left flex justify-start text-gray-600 text-xs">
+            Copyright © 2021 Trailmate. All Rights Reserved
           </p>
-  
-  
+
           <div class="flex justify-end space-x-4">
             <i class="fab fa-cc-visa text-gray-600"></i>
             <i class="fab fa-cc-mastercard text-gray-600"></i>
@@ -599,40 +939,35 @@
       </div>
     </footer>
 
-
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- owl carousel -->
-  <script>
-    $(document).ready(function () {
-      $("#sync1").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        dots: true,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- owl carousel -->
+    <script>
+      $(document).ready(function () {
+        $("#sync1").owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          dots: true,
+        });
       });
-    });
-  </script>
-  
-  <!-- timer -->
-  <script>
-    // Function to start countdown timer
-    function startTimer(duration, display) {
-      let timer = duration,
-        hours,
-        minutes,
-        seconds;
-      setInterval(function () {
-        hours = Math.floor(timer / 3600);
-        minutes = Math.floor((timer % 3600) / 60);
-        seconds = Math.floor(timer % 60);
-  
-        // Display the countdown in respective divs
-        display.innerHTML = `
+    </script>
+
+    <!-- timer -->
+    <script>
+      // Function to start countdown timer
+      function startTimer(duration, display) {
+        let timer = duration,
+          hours,
+          minutes,
+          seconds;
+        setInterval(function () {
+          hours = Math.floor(timer / 3600);
+          minutes = Math.floor((timer % 3600) / 60);
+          seconds = Math.floor(timer % 60);
+
+          // Display the countdown in respective divs
+          display.innerHTML = `
             <div class="flex flex-col items-center border border-gray-400 rounded-2xl px-2 py-3">
               <span class="text-red-500  text-xl font-bold">${hours}</span>
               <span class="text-gray-500 text-xs">Hours</span>
@@ -645,60 +980,54 @@
               <span class="text-red-500 text-xl font-bold">${seconds}</span>
               <span class="text-gray-500 text-xs">Seconds</span>
             </div>`;
-  
-        // Decrement timer
-        if (--timer < 0) {
-          timer = duration; // Reset the timer after reaching 0
-        }
-      }, 1000);
-    }
-  
-    // Set the initial countdown time (e.g., 2 hours)
-    const countdownDuration = 2 * 60 * 60; // 2 hours in seconds
-  
-    // Find the elements where the timers should appear
-    const timerLeft = document.getElementById("timer-left");
-    const timerRight1 = document.getElementById("timer-right-1");
-    const timerRight2 = document.getElementById("timer-right-2");
-    const timerLeft2 = document.getElementById("timer-left-2");
-  
-    // Start the timers for each card
-    window.onload = function () {
-      startTimer(countdownDuration, timerLeft);
-      startTimer(countdownDuration, timerRight1);
-      startTimer(countdownDuration, timerRight2);
-      startTimer(countdownDuration, timerLeft2);
-    };
-  </script>
 
-  
+          // Decrement timer
+          if (--timer < 0) {
+            timer = duration; // Reset the timer after reaching 0
+          }
+        }, 1000);
+      }
 
-<script>
-  $(document).ready(function () {
-    $(".top-rated-carousel").owlCarousel({
-      items: 4,
-      loop: true,
-      dots: true,
-      nav: true,
-      margin: 20,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 2,
-        },
-        1000: {
+      // Set the initial countdown time (e.g., 2 hours)
+      const countdownDuration = 2 * 60 * 60; // 2 hours in seconds
+
+      // Find the elements where the timers should appear
+      const timerLeft = document.getElementById("timer-left");
+      const timerRight1 = document.getElementById("timer-right-1");
+      const timerRight2 = document.getElementById("timer-right-2");
+      const timerLeft2 = document.getElementById("timer-left-2");
+
+      // Start the timers for each card
+      window.onload = function () {
+        startTimer(countdownDuration, timerLeft);
+        startTimer(countdownDuration, timerRight1);
+        startTimer(countdownDuration, timerRight2);
+        startTimer(countdownDuration, timerLeft2);
+      };
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".top-rated-carousel").owlCarousel({
           items: 4,
-        },
-      },
-    });
-  });
-</script>
-  
-</body>
-<!-- footer -->
-
-
-
+          loop: true,
+          dots: true,
+          nav: true,
+          margin: 20,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+  <!-- footer -->
 </html>
