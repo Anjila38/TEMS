@@ -37,520 +37,559 @@
   </head>
   <body class="bg-gray-50 font-montserrat">
     <header class="bg-white">
-        <div class="container mx-auto p-4 flex items-center">
-          <a href="/index/main.html" class="text-3xl font-bold text-red-500">TrailMate</a>
-  
-          <div
-            class="flex ml-16 border border-gray-300 rounded-xl overflow-hidden sm:flex"
-          >
-            <input
-              type="text"
-              placeholder="Search"
-              class="py-2 px-4 w-full outline-none text-sm text-gray-600"
-            />
-            <i class="fa-solid fa-magnifying-glass p-3 text-gray-500"></i>
-          </div>
-  
-          <div class="ml-auto flex space-x-5">
-            <a href="#"
-              ><i class="fa-solid fa-user-plus text-gray-600 text-lg"></i
-            ></a>
-            <a href="#"
-              ><i class="fa-solid fa-comment-dots text-gray-600 text-lg"></i
-            ></a>
-            <a href="#"><i class="fa-solid fa-bell text-gray-600 text-lg"></i></a>
-          </div>
+      <div class="container mx-auto p-4 flex items-center">
+        <a href="/index/main.html" class="text-3xl font-bold text-red-500"
+          >TrailMate</a
+        >
+
+        <div
+          class="flex ml-16 border border-gray-300 rounded-xl overflow-hidden sm:flex"
+        >
+          <input
+            type="text"
+            placeholder="Search"
+            class="py-2 px-4 w-full outline-none text-sm text-gray-600"
+          />
+          <i class="fa-solid fa-magnifying-glass p-3 text-gray-500"></i>
         </div>
-      </header>
-  
-      <div class="container mx-auto p-0 sm:flex">
-        <!-- Sidebar -->
-        <aside class="w-full sm:w-1/4 bg-white p-4 mb-4 sm:mb-0 sm:mr-4">
-         <a href="/index/profile.html"> <div
+
+        <div class="ml-auto flex space-x-5">
+          <a href="#"
+            ><i class="fa-solid fa-user-plus text-gray-600 text-lg"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-solid fa-comment-dots text-gray-600 text-lg"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-bell text-gray-600 text-lg"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto p-0 sm:flex">
+      <!-- Sidebar -->
+      <aside class="w-full sm:w-1/4 bg-white p-4 mb-4 sm:mb-0 sm:mr-4">
+        <a href="/index/profile.html">
+          <div
             class="flex border border-gray-200 bg-gray-50 rounded-lg py-2 px-3 md:p-2 items-center space-x-3 mb-4"
           >
             <div class="w-8 h-8 bg-red-400 rounded-full"></div>
             <span class="font-semibold">John Doe</span>
-          </div></a>
-  
-          <!-- Sidebar Navigation -->
-          <nav class="space-y-2 text-sm text-gray-700">
-            <a
-              href="/index/feed.html"
-              class="flex items-center bg-gray-200 p-2 rounded-lg hover:bg-gray-100"
+          </div></a
+        >
+
+        <!-- Sidebar Navigation -->
+        <nav class="space-y-2 text-sm text-gray-700">
+          <a
+            href="/index/feed.html"
+            class="flex items-center bg-gray-200 p-2 rounded-lg hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-house mr-2"></i><span>Feed</span>
+          </a>
+          
+          <a
+            href="/index/events.html"
+            class="flex items-center p-2 rounded-lg hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-calendar-days mr-2"></i><span>Event</span>
+          </a>
+          
+          <a
+            href="/index/main.html"
+            class="flex items-center p-2 rounded-lg hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-store mr-2"></i><span>Marketplace</span>
+          </a>
+          <a
+            href="/index/community.html"
+            class="flex items-center p-2 rounded-lg hover:bg-gray-100"
+          >
+          <i class="fa-solid fa-users-line mr-2"></i><span>Communities</span>
+          </a>
+        </nav>
+
+        <!-- Pages You Like Section -->
+        <div class="mt-12">
+          <h2 class="text-sm font-semibold mb-5 text-gray-500">
+            Pages You Like
+          </h2>
+          <div class="space-y-4 text-xs font-medium">
+            <!-- First item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
             >
-              <i class="fa-solid fa-house mr-2"></i><span>Feed</span>
-            </a>
-            <a
-              href="#"
-              class="flex items-center p-2 rounded-lg hover:bg-gray-100"
-            >
-              <i class="fa-solid fa-users mr-2"></i><span>Friends</span>
-            </a>
-            <a
-              href="#"
-              class="flex items-center p-2 rounded-lg hover:bg-gray-100"
-            >
-              <i class="fa-solid fa-calendar-days mr-2"></i><span>Event</span>
-            </a>
-            <a
-              href="#"
-              class="flex items-center p-2 rounded-lg hover:bg-gray-100"
-            >
-              <i class="fa-solid fa-camera mr-2"></i><span>Photos</span>
-            </a>
-            <a
-              href="#"
-              class="flex items-center p-2 rounded-lg hover:bg-gray-100"
-            >
-              <i class="fa-solid fa-store mr-2"></i><span>Marketplace</span>
-            </a>
-          </nav>
-  
-          <!-- Pages You Like Section -->
-          <div class="mt-12">
-            <h2 class="text-sm font-semibold mb-5 text-gray-500">
-              Pages You Like
-            </h2>
-            <div class="space-y-4 text-xs font-medium">
-              <!-- First item -->
-              <div
-                class="flex items-center justify-between rounded-lg hover:bg-gray-100"
-              >
-                <div class="flex items-center space-x-3">
-                  <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-                  <span class="text-sm">Zam Vlogs</span>
-                </div>
-                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
-                  >120</span
-                >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Zam Vlogs</span>
               </div>
-  
-              <!-- Second item -->
-              <div
-                class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >120</span
               >
-                <div class="flex items-center space-x-3">
-                  <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-                  <span class="text-sm">Sisan Baniya</span>
-                </div>
-                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
-                  >10</span
-                >
+            </div>
+
+            <!-- Second item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+            >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Sisan Baniya</span>
               </div>
-  
-              <!-- Third item -->
-              <div
-                class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >10</span
               >
-                <div class="flex items-center space-x-3">
-                  <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-                  <span class="text-sm">Ghumante</span>
-                </div>
-                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
-                  >18</span
-                >
+            </div>
+
+            <!-- Third item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+            >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Ghumante</span>
               </div>
-  
-              <!-- Fourth item -->
-              <div
-                class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >18</span
               >
-                <div class="flex items-center space-x-3">
-                  <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-                  <span class="text-sm">Dhorpatan</span>
-                </div>
-                <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
-                  >21</span
-                >
+            </div>
+
+            <!-- Fourth item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+            >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Dhorpatan</span>
               </div>
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >21</span
+              >
             </div>
           </div>
-          <h3 class="text-sm font-semibold mb-5 text-gray-500 mt-12">Your Pages</h3>
-          <div class="space-y-3">
-            <div class="flex justify-start text-sm space-x-3">
-              <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-              <span>Zam Vlogs</span>
-              <span class="text-xs text-gray-400 pl-6 rounded-full">11 min</span>
-            </div>
-            <div class="flex justify-start text-sm space-x-3">
-              <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-  
-              <span>Sisan Baniya</span>
-              <span class="pl-6"
-                ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
-              ></span>
-            </div>
-            <div class="flex justify-start text-sm space-x-3">
-              <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-  
-              <span>Ghumante</span>
-              <span class="pl-9"
-                ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
-              ></span>
-            </div>
-            <div class="flex justify-start text-sm space-x-3">
-              <div class="w-6 h-6 bg-red-400 rounded-full"></div>
-  
-              <span>Dhorpatan</span>
-              <span class="pl-9"
-                ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
-              ></span>
-            </div>
+        </div>
+        <h3 class="text-sm font-semibold mb-5 text-gray-500 mt-12">
+          Your Pages
+        </h3>
+        <div class="space-y-3">
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+            <span>Zam Vlogs</span>
+            <span class="text-xs text-gray-400 pl-6 rounded-full">11 min</span>
           </div>
-        </aside>
-        
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+
+            <span>Sisan Baniya</span>
+            <span class="pl-6"
+              ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
+            ></span>
+          </div>
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+
+            <span>Ghumante</span>
+            <span class="pl-9"
+              ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
+            ></span>
+          </div>
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+
+            <span>Dhorpatan</span>
+            <span class="pl-9"
+              ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
+            ></span>
+          </div>
+        </div>
+      </aside>
+   
     <div class="bg-gray-100 min-h-screen py-8 px-4">
-        <div class="bg-white p-4 mb-6 relative">
-            <div class="flex items-center gap-3">
-              <!-- Profile Picture -->
-              <div class="w-12 h-12 rounded-full bg-red-400"></div>
-              <!-- Input Field -->
-              <div class="flex items-center w-full bg-gray-100 rounded-full">
-                <input
-                  type="text"
-                  placeholder="What's on your mind?"
-                  id="post-input"
-                  class="w-full bg-transparent p-3 text-gray-700 placeholder-gray-500 focus:outline-none"
-                />
-                <button
-                  onclick="submitPost()"
-                  class="bg-red-400 text-white px-4 py-2 rounded-full hover:bg-red-500 focus:ring-2 focus:ring-red-300 focus:outline-none ml-2 mr-2"
-                >
-                  Post
-                </button>
-              </div>
-            </div>
-            <hr class="my-4">
-            <!-- Post Options -->
-            <div class="flex justify-around text-sm text-gray-600">
-                <button
-                class="flex items-center gap-2 hover:text-red-400"
-                onclick="triggerFileInput()"
-              >
-                <i class="fa-solid fa-photo-video"></i>
-                <span>Photo/Video</span>
-              </button>
-            
-              <!-- Hidden file input for uploading photo/video -->
-              <input
-                type="file"
-                id="file-input"
-                accept="image/*,video/*"
-                class="hidden"
-                onchange="previewMedia(event)"
-              />
-            
-              <!-- Preview of selected media (image or video) -->
-              <div
-                id="media-preview"
-                class="hidden absolute bg-white shadow-lg rounded-lg p-4 top-full mt-2 w-80"
-              >
-                <div id="preview-content"></div>
-                <button
-                  class="mt-4 text-red-400"
-                  onclick="removeMediaPreview()"
-                >
-                  Remove
-                </button>
-              </div>
-              <button
-                class="flex items-center gap-2 hover:text-red-400 relative"
-                onclick="toggleFeelings()"
-              >
-                <i class="fa-solid fa-smile"></i>
-                <span>Feeling/Activity</span>
-              </button>
-              <button
-              class="flex items-center gap-2 hover:text-red-400"
-              onclick="toggleTagFriends()"
+      <div class="bg-white p-4 mb-6 relative">
+        <div class="flex items-center gap-3">
+          <!-- Profile Picture -->
+          <div class="w-12 h-12 rounded-full bg-red-400"></div>
+          <!-- Input Field -->
+          <div class="flex items-center w-full bg-gray-100 rounded-full">
+            <input
+              type="text"
+              placeholder="What's on your mind?"
+              id="post-input"
+              class="w-full bg-transparent p-3 text-gray-700 placeholder-gray-500 focus:outline-none"
+            />
+
+            <!-- Error message below the input field (hidden by default) -->
+            <span
+              id="error-message"
+              style="color: red; display: none; font-size: 12px"
+              >Please enter some text before posting!</span
             >
-              <i class="fa-solid fa-tag"></i>
-              <span>Tag Friends</span>
+
+            <button
+              onclick="submitPost()"
+              class="bg-red-400 text-white px-4 py-1 rounded-full hover:bg-red-500 focus:ring-2 focus:ring-red-300 focus:outline-none ml-2 mr-2"
+            >
+              Post
             </button>
-          
-            <!-- Tag Friends Popup -->
-            <div
-              id="tag-friends-popup"
-              class="hidden absolute bg-white shadow-lg rounded-lg p-4 top-full mt-2 w-80"
-            >
-              <h4 class="font-semibold text-sm mb-2">Tag Friends</h4>
-              <!-- Search Friends Input -->
-              <input
-                type="text"
-                placeholder="Search friends..."
-                class="w-full bg-gray-100 p-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-red-400 mb-4"
-              />
-              <!-- Friends List -->
-              <div class="space-y-2">
-                <!-- Example friends -->
-                <div
-                  class="flex items-center gap-3 cursor-pointer hover:bg-gray-100 p-2 rounded"
-                  onclick="addFriendTag('John Doe')"
-                >
-                  <div class="w-8 h-8 bg-red-400 rounded-full"></div>
-                  <span class="text-sm">John Doe</span>
-                </div>
-                <div
-                  class="flex items-center gap-3 cursor-pointer hover:bg-gray-100 p-2 rounded"
-                  onclick="addFriendTag('Jane Smith')"
-                >
-                  <div class="w-8 h-8 bg-red-400 rounded-full"></div>
-                  <span class="text-sm">Jane Smith</span>
-                </div>
-                <!-- Add more friend options as needed -->
+          </div>
+        </div>
+        <hr class="my-4" />
+        <!-- Post Options -->
+        <div class="flex justify-around text-sm text-gray-600">
+          <button
+            class="flex items-center gap-2 hover:text-red-400"
+            onclick="triggerFileInput()"
+          >
+            <i class="fa-solid fa-photo-video"></i>
+            <span>Photo/Video</span>
+          </button>
+
+          <!-- Hidden file input for uploading photo/video -->
+          <input
+            type="file"
+            id="file-input"
+            accept="image/*,video/*"
+            class="hidden"
+            onchange="previewMedia(event)"
+          />
+
+          <!-- Preview of selected media (image or video) -->
+          <div
+            id="media-preview"
+            class="hidden absolute bg-white shadow-lg rounded-lg p-4 top-full mt-2 w-80"
+          >
+            <div id="preview-content"></div>
+            <button class="mt-4 text-red-400" onclick="removeMediaPreview()">
+              Remove
+            </button>
+          </div>
+          <button
+            class="flex items-center gap-2 hover:text-red-400 relative"
+            onclick="toggleFeelings()"
+          >
+            <i class="fa-solid fa-smile"></i>
+            <span>Feeling/Activity</span>
+          </button>
+          <button
+            class="flex items-center gap-2 hover:text-red-400"
+            onclick="toggleTagFriends()"
+          >
+            <i class="fa-solid fa-tag"></i>
+            <span>Tag Friends</span>
+          </button>
+
+          <!-- Tag Friends Popup -->
+          <div
+            id="tag-friends-popup"
+            class="hidden absolute bg-white shadow-lg rounded-lg p-4 top-full mt-2 w-80"
+          >
+            <h4 class="font-semibold text-sm mb-2">Tag Friends</h4>
+            <!-- Search Friends Input -->
+            <input
+              type="text"
+              placeholder="Search friends..."
+              class="w-full bg-gray-100 p-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-red-400 mb-4"
+            />
+            <!-- Friends List -->
+            <div class="space-y-2">
+              <!-- Example friends -->
+              <div
+                class="flex items-center gap-3 cursor-pointer hover:bg-gray-100 p-2 rounded"
+                onclick="addFriendTag('John Doe')"
+              >
+                <div class="w-8 h-8 bg-red-400 rounded-full"></div>
+                <span class="text-sm">John Doe</span>
               </div>
-            </div>
-          
-            </div>
-          
-            <!-- Pop-up for Feelings/Emojis -->
-            <div
-              id="feelings-popup"
-              class="hidden absolute bg-white shadow-lg rounded-lg p-4 top-full mt-2 w-80"
-            >
-              <div class="grid grid-cols-4 gap-3">
-                <!-- Example emojis -->
-                <div
-                  class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
-                  onclick="selectFeeling('😊 Happy')"
-                >
-                  😊
-                  <p class="text-xs text-gray-600">Happy</p>
-                </div>
-                <div
-                  class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
-                  onclick="selectFeeling('😢 Sad')"
-                >
-                  😢
-                  <p class="text-xs text-gray-600">Sad</p>
-                </div>
-                <div
-                  class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
-                  onclick="selectFeeling('😡 Angry')"
-                >
-                  😡
-                  <p class="text-xs text-gray-600">Angry</p>
-                </div>
-                <div
-                  class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
-                  onclick="selectFeeling('😴 Sleepy')"
-                >
-                  😴
-                  <p class="text-xs text-gray-600">Sleepy</p>
-                </div>
-                <!-- Add more feelings here -->
+              <div
+                class="flex items-center gap-3 cursor-pointer hover:bg-gray-100 p-2 rounded"
+                onclick="addFriendTag('Jane Smith')"
+              >
+                <div class="w-8 h-8 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Jane Smith</span>
               </div>
-            </div>
-          
-            <!-- Posted Message -->
-            <div
-              id="posted-message"
-              class="hidden fixed top-20 right-5 bg-green-400 text-white px-4 py-2 rounded shadow-lg"
-            >
-              Posted!
+              <!-- Add more friend options as needed -->
             </div>
           </div>
-          
-          <script>
-            // Toggle the feelings popup
-            function toggleFeelings() {
-              const popup = document.getElementById("feelings-popup");
-              popup.classList.toggle("hidden");
-            }
-          
-            // Select a feeling
-            function selectFeeling(feeling) {
-              const input = document.getElementById("post-input");
-              input.value = `Feeling: ${feeling}`;
-              toggleFeelings(); // Close the popup
-            }
-          
-            // Submit post and show "Posted" message
-            function submitPost() {
-              const input = document.getElementById("post-input");
-              const postedMessage = document.getElementById("posted-message");
-          
-              if (input.value.trim() !== "") {
-                // Show the "Posted" message
-                postedMessage.classList.remove("hidden");
-          
-                // Hide the message after 2 seconds
-                setTimeout(() => {
-                  postedMessage.classList.add("hidden");
-                }, 2000);
-          
-                // Clear the input field
-                input.value = "";
-              } else {
-                alert("Please enter something to post!");
-              }
-            }
-          </script>
-          
-          <script>
-            // Toggle the tag friends popup
-            function toggleTagFriends() {
-              const popup = document.getElementById("tag-friends-popup");
-              popup.classList.toggle("hidden");
-            }
-          
-            // Add a friend's name to the input field
-            function addFriendTag(friendName) {
-              const input = document.getElementById("post-input");
-              if (!input.value.includes(friendName)) {
-                input.value += input.value ? ` @${friendName}` : `@${friendName}`;
-              }
-              toggleTagFriends(); // Close the popup
-            }
-          </script>
-          <script>
-            // Trigger file input click
-            function triggerFileInput() {
-              document.getElementById("file-input").click();
-            }
-          
-            // Show preview of the selected media (image/video)
-            function previewMedia(event) {
-              const file = event.target.files[0];
-              const previewContent = document.getElementById("preview-content");
-          
-              // Check if the file is an image or video
-              if (file) {
-                const fileType = file.type.split("/")[0];
-          
-                if (fileType === "image") {
-                  // Show image preview
-                  const reader = new FileReader();
-                  reader.onload = function () {
-                    previewContent.innerHTML = `<img src="${reader.result}" class="w-full h-auto rounded-lg" />`;
-                    document.getElementById("media-preview").classList.remove("hidden");
-                  };
-                  reader.readAsDataURL(file);
-                } else if (fileType === "video") {
-                  // Show video preview
-                  const videoURL = URL.createObjectURL(file);
-                  previewContent.innerHTML = `<video class="w-full h-auto rounded-lg" controls><source src="${videoURL}" type="${file.type}"></video>`;
-                  document.getElementById("media-preview").classList.remove("hidden");
-                }
-              }
-            }
-          
-            // Remove the media preview
-            function removeMediaPreview() {
-              const fileInput = document.getElementById("file-input");
-              const previewContent = document.getElementById("preview-content");
-          
-              // Clear the file input and hide the preview
-              fileInput.value = "";
-              previewContent.innerHTML = "";
-              document.getElementById("media-preview").classList.add("hidden");
-            }
-          </script>
-          
-          
-        <div class="max-w-4xl mx-auto space-y-6">
-          <!-- Header -->
-          
-      
-          <!-- Feed Section -->
-          <div class="space-y-4">
-            <!-- Post 1 -->
-            <div class="bg-white rounded-lg shadow-md p-4">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-red-400 rounded-full"></div>
-                <div>
-                  <h3 class="font-bold text-sm">Mountain Wanderer</h3>
-                  <p class="text-xs text-gray-500">1 hour ago</p>
-                </div>
-              </div>
-              <p class="text-sm text-gray-700 mt-3">
-                Reaching new heights and embracing the beauty of the Himalayas on the ABC Trek! 🏔️ #AnnapurnaBaseCamp #AdventureAwaits🌄
-              </p>
-              <div class="mt-3">
-                <img
-                  src="/images/abc.jpg"
-                  alt="Trekking Image"
-                  class="rounded-lg w-full"
-                />
-              </div>
-              <div class="flex justify-between items-center mt-3 text-gray-500 text-sm">
-                <div class="flex gap-2">
-                  <button class="flex items-center gap-1 hover:text-red-400">
-                    <i class="fa-solid fa-heart"></i> 235
-                  </button>
-                  <button class="flex items-center gap-1 hover:text-red-400">
-                    <i class="fa-solid fa-comment"></i> 34
-                  </button>
-                </div>
-                <p>Tags: #Annapurna #NepalTrekking</p>
-              </div>
+        </div>
+
+        <!-- Pop-up for Feelings/Emojis -->
+        <div
+          id="feelings-popup"
+          class="hidden absolute bg-white shadow-lg rounded-lg p-4 top-full mt-2 w-80"
+        >
+          <div class="grid grid-cols-4 gap-3">
+            <!-- Example emojis -->
+            <div
+              class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
+              onclick="selectFeeling('😊 Happy')"
+            >
+              😊
+              <p class="text-xs text-gray-600">Happy</p>
             </div>
-      
-            <!-- Post 2 -->
-            <div class="bg-white rounded-lg shadow-md p-4">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-red-400 rounded-full"></div>
-                <div>
-                  <h3 class="font-bold text-sm">Everest Dreamer</h3>
-                  <p class="text-xs text-gray-500">3 hours ago</p>
-                </div>
-              </div>
-              <p class="text-sm text-gray-700 mt-3">
-                Planning my trek to Everest Base Camp. Does anyone have tips for
-                acclimatization or must-visit tea houses along the way? 🙌
-              </p>
-              <div class="mt-3 bg-gray-100 p-3 rounded-lg">
-                <h4 class="font-bold text-sm">Top Comment</h4>
-                <p class="text-sm text-gray-600">
-                  "Stay hydrated and take your time ascending. The tea house at Dingboche
-                  is fantastic!" - <span class="text-red-400">@TrailGuide</span>
-                </p>
-              </div>
-              <div class="flex justify-between items-center mt-3 text-gray-500 text-sm">
-                <div class="flex gap-2">
-                  <button class="flex items-center gap-1 hover:text-red-400">
-                    <i class="fa-solid fa-heart"></i> 123
-                  </button>
-                  <button class="flex items-center gap-1 hover:text-red-400">
-                    <i class="fa-solid fa-comment"></i> 42
-                  </button>
-                </div>
-                <p>Tags: #EverestBaseCamp #NepalTips</p>
-              </div>
+            <div
+              class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
+              onclick="selectFeeling('😢 Sad')"
+            >
+              😢
+              <p class="text-xs text-gray-600">Sad</p>
             </div>
-      
-            <!-- Post 3 -->
-            <div class="bg-white rounded-lg shadow-md p-4">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-red-400 rounded-full"></div>
-                <div>
-                  <h3 class="font-bold text-sm">Lakeside Wanderlust</h3>
-                  <p class="text-xs text-gray-500">5 hours ago</p>
-                </div>
-              </div>
-              <p class="text-sm text-gray-700 mt-3">
-                Can anyone recommend short treks near Pokhara? Thinking of Poon Hill
-                or something similar. Thanks in advance! 🏔️
-              </p>
-              <div class="flex justify-between items-center mt-3 text-gray-500 text-sm">
-                <div class="flex gap-2">
-                  <button class="flex items-center gap-1 hover:text-red-400">
-                    <i class="fa-solid fa-heart"></i> 87
-                  </button>
-                  <button class="flex items-center gap-1 hover:text-red-400">
-                    <i class="fa-solid fa-comment"></i> 15
-                  </button>
-                </div>
-                <p>Tags: #PoonHill #TrekkingNepal</p>
-              </div>
+            <div
+              class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
+              onclick="selectFeeling('😡 Angry')"
+            >
+              😡
+              <p class="text-xs text-gray-600">Angry</p>
             </div>
+            <div
+              class="p-2 text-center cursor-pointer hover:bg-gray-100 rounded-lg"
+              onclick="selectFeeling('😴 Sleepy')"
+            >
+              😴
+              <p class="text-xs text-gray-600">Sleepy</p>
+            </div>
+            <!-- Add more feelings here -->
           </div>
-      
-         
-         
+        </div>
+
+        <!-- Posted Message -->
+        <div
+          id="posted-message"
+          class="hidden fixed top-20 right-5 bg-green-400 text-white px-4 py-2 rounded shadow-lg"
+        >
+          Posted!
         </div>
       </div>
-      
+      <script>
+        function submitPost() {
+          // Get the input and error message elements
+          const postInput = document.getElementById("post-input");
+          const errorMessage = document.getElementById("error-message");
+
+          // Check if the input is empty or contains only spaces
+          if (postInput.value.trim() === "") {
+            // If empty, show the error message
+            errorMessage.style.display = "inline";
+          } else {
+            // Hide the error message if input is valid
+            errorMessage.style.display = "none";
+
+            // Proceed with posting (this could be an AJAX request, etc.)
+            console.log("Post Content: ", postInput.value);
+
+            // Optionally, clear the input field after posting
+            postInput.value = "";
+          }
+        }
+      </script>
+      <script>
+        // Toggle the feelings popup
+        function toggleFeelings() {
+          const popup = document.getElementById("feelings-popup");
+          popup.classList.toggle("hidden");
+        }
+
+        // Select a feeling
+        function selectFeeling(feeling) {
+          const input = document.getElementById("post-input");
+          input.value = `Feeling: ${feeling}`;
+          toggleFeelings(); // Close the popup
+        }
+
+        // Submit post and show "Posted" message
+        function submitPost() {
+          // Get the input, error message, and posted message elements
+          const postInput = document.getElementById("post-input");
+          const errorMessage = document.getElementById("error-message");
+          const postedMessage = document.getElementById("posted-message");
+
+          // Check if the input is empty or contains only spaces
+          if (postInput.value.trim() === "") {
+            // If empty, show the error message
+            errorMessage.style.display = "inline";
+          } else {
+            // Hide the error message if input is valid
+            errorMessage.style.display = "none";
+
+            // Show the "Posted" message
+            postedMessage.classList.remove("hidden");
+
+            // Hide the message after 2 seconds
+            setTimeout(() => {
+              postedMessage.classList.add("hidden");
+            }, 2000);
+
+            // Optionally, clear the input field after posting
+            postInput.value = "";
+          }
+        }
+      </script>
+
+      <script>
+        // Toggle the tag friends popup
+        function toggleTagFriends() {
+          const popup = document.getElementById("tag-friends-popup");
+          popup.classList.toggle("hidden");
+        }
+
+        // Add a friend's name to the input field
+        function addFriendTag(friendName) {
+          const input = document.getElementById("post-input");
+          if (!input.value.includes(friendName)) {
+            input.value += input.value ? ` @${friendName}` : `@${friendName}`;
+          }
+          toggleTagFriends(); // Close the popup
+        }
+      </script>
+      <script>
+        // Trigger file input click
+        function triggerFileInput() {
+          document.getElementById("file-input").click();
+        }
+
+        // Show preview of the selected media (image/video)
+        function previewMedia(event) {
+          const file = event.target.files[0];
+          const previewContent = document.getElementById("preview-content");
+
+          // Check if the file is an image or video
+          if (file) {
+            const fileType = file.type.split("/")[0];
+
+            if (fileType === "image") {
+              // Show image preview
+              const reader = new FileReader();
+              reader.onload = function () {
+                previewContent.innerHTML = `<img src="${reader.result}" class="w-full h-auto rounded-lg" />`;
+                document
+                  .getElementById("media-preview")
+                  .classList.remove("hidden");
+              };
+              reader.readAsDataURL(file);
+            } else if (fileType === "video") {
+              // Show video preview
+              const videoURL = URL.createObjectURL(file);
+              previewContent.innerHTML = `<video class="w-full h-auto rounded-lg" controls><source src="${videoURL}" type="${file.type}"></video>`;
+              document
+                .getElementById("media-preview")
+                .classList.remove("hidden");
+            }
+          }
+        }
+
+        // Remove the media preview
+        function removeMediaPreview() {
+          const fileInput = document.getElementById("file-input");
+          const previewContent = document.getElementById("preview-content");
+
+          // Clear the file input and hide the preview
+          fileInput.value = "";
+          previewContent.innerHTML = "";
+          document.getElementById("media-preview").classList.add("hidden");
+        }
+      </script>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+        <!-- Header -->
+
+        <!-- Feed Section -->
+        <div class="space-y-4">
+          <!-- Post 1 -->
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-red-400 rounded-full"></div>
+              <div>
+                <h3 class="font-bold text-sm">Mountain Wanderer</h3>
+                <p class="text-xs text-gray-500">1 hour ago</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 mt-3">
+              Reaching new heights and embracing the beauty of the Himalayas on
+              the ABC Trek! 🏔️ #AnnapurnaBaseCamp #AdventureAwaits🌄
+            </p>
+            <div class="mt-3">
+              <img
+                src="/images/abc.jpg"
+                alt="Trekking Image"
+                class="rounded-lg w-full"
+              />
+            </div>
+            <div
+              class="flex justify-between items-center mt-3 text-gray-500 text-sm"
+            >
+              <div class="flex gap-2">
+                <button class="flex items-center gap-1 hover:text-red-400">
+                  <i class="fa-solid fa-heart"></i> 235
+                </button>
+                <button class="flex items-center gap-1 hover:text-red-400">
+                  <i class="fa-solid fa-comment"></i> 34
+                </button>
+              </div>
+              <p>Tags: #Annapurna #NepalTrekking</p>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-red-400 rounded-full"></div>
+              <div>
+                <h3 class="font-bold text-sm">Everest Dreamer</h3>
+                <p class="text-xs text-gray-500">3 hours ago</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 mt-3">
+              Planning my trek to Everest Base Camp. Does anyone have tips for
+              acclimatization or must-visit tea houses along the way? 🙌
+            </p>
+            <div class="mt-3 bg-gray-100 p-3 rounded-lg">
+              <h4 class="font-bold text-sm">Top Comment</h4>
+              <p class="text-sm text-gray-600">
+                "Stay hydrated and take your time ascending. The tea house at
+                Dingboche is fantastic!" -
+                <span class="text-red-400">@TrailGuide</span>
+              </p>
+            </div>
+            <div
+              class="flex justify-between items-center mt-3 text-gray-500 text-sm"
+            >
+              <div class="flex gap-2">
+                <button class="flex items-center gap-1 hover:text-red-400">
+                  <i class="fa-solid fa-heart"></i> 123
+                </button>
+                <button class="flex items-center gap-1 hover:text-red-400">
+                  <i class="fa-solid fa-comment"></i> 42
+                </button>
+              </div>
+              <p>Tags: #EverestBaseCamp #NepalTips</p>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-red-400 rounded-full"></div>
+              <div>
+                <h3 class="font-bold text-sm">Lakeside Wanderlust</h3>
+                <p class="text-xs text-gray-500">5 hours ago</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 mt-3">
+              Can anyone recommend short treks near Pokhara? Thinking of Poon
+              Hill or something similar. Thanks in advance! 🏔️
+            </p>
+            <div
+              class="flex justify-between items-center mt-3 text-gray-500 text-sm"
+            >
+              <div class="flex gap-2">
+                <button class="flex items-center gap-1 hover:text-red-400">
+                  <i class="fa-solid fa-heart"></i> 87
+                </button>
+                <button class="flex items-center gap-1 hover:text-red-400">
+                  <i class="fa-solid fa-comment"></i> 15
+                </button>
+              </div>
+              <p>Tags: #PoonHill #TrekkingNepal</p>
+            </div>
+          </div>
+        </div>
+    </div>
   </body>
 </html>

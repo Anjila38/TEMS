@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/Trailmatelogo-04.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 font-montserrat">
+    <header class="bg-white">
+      <div class="container mx-auto p-4 flex items-center">
+        <a href="/index/main.html" class="text-3xl font-bold text-red-500"
+          >TrailMate</a
+        >
+
+        <div
+          class="flex ml-16 border border-gray-300 rounded-xl overflow-hidden sm:flex"
+        >
+          <input
+            type="text"
+            placeholder="Search"
+            class="py-2 px-4 w-full outline-none text-sm text-gray-600"
+          />
+          <i class="fa-solid fa-magnifying-glass p-3 text-gray-500"></i>
+        </div>
+
+        <div class="ml-auto flex space-x-5">
+          <a href="#"
+            ><i class="fa-solid fa-user-plus text-gray-600 text-lg"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-solid fa-comment-dots text-gray-600 text-lg"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-bell text-gray-600 text-lg"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto p-0 sm:flex">
+      <!-- Sidebar -->
+      <aside class="w-full sm:w-1/4 bg-white p-4 mb-4 sm:mb-0 sm:mr-4">
+        <a href="/index/profile.html">
+          <div
+            class="flex border border-gray-200 bg-gray-50 rounded-lg py-2 px-3 md:p-2 items-center space-x-3 mb-4"
+          >
+            <div class="w-8 h-8 bg-red-400 rounded-full"></div>
+            <span class="font-semibold">John Doe</span>
+          </div></a
+        >
+
+        <!-- Sidebar Navigation -->
+        <nav class="space-y-2 text-sm text-gray-700">
+          <a
+            href="/index/feed.html"
+            class="flex items-center p-2 rounded-lg hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-house mr-2"></i><span>Feed</span>
+          </a>
+          
+          <a
+            href="#"
+            class="flex items-center bg-gray-200 p-2 rounded-lg hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-calendar-days mr-2"></i><span>Event</span>
+          </a>
+         
+          <a
+            href="/index/main.html"
+            class="flex items-center p-2 rounded-lg hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-store mr-2"></i><span>Marketplace</span>
+          </a>
+          <a
+            href="/index/community.html"
+            class="flex items-center p-2 rounded-lg hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-users-line mr-2"></i><span>Communities</span>
+          </a>
+        </nav>
+
+        <!-- Pages You Like Section -->
+        <div class="mt-12">
+          <h2 class="text-sm font-semibold mb-5 text-gray-500">
+            Pages You Like
+          </h2>
+          <div class="space-y-4 text-xs font-medium">
+            <!-- First item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+            >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Zam Vlogs</span>
+              </div>
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >120</span
+              >
+            </div>
+
+            <!-- Second item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+            >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Sisan Baniya</span>
+              </div>
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >10</span
+              >
+            </div>
+
+            <!-- Third item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+            >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Ghumante</span>
+              </div>
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >18</span
+              >
+            </div>
+
+            <!-- Fourth item -->
+            <div
+              class="flex items-center justify-between rounded-lg hover:bg-gray-100"
+            >
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+                <span class="text-sm">Dhorpatan</span>
+              </div>
+              <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full"
+                >21</span
+              >
+            </div>
+          </div>
+        </div>
+        <h3 class="text-sm font-semibold mb-5 text-gray-500 mt-12">
+          Your Pages
+        </h3>
+        <div class="space-y-3">
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+            <span>Zam Vlogs</span>
+            <span class="text-xs text-gray-400 pl-6 rounded-full">11 min</span>
+          </div>
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+
+            <span>Sisan Baniya</span>
+            <span class="pl-6"
+              ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
+            ></span>
+          </div>
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+
+            <span>Ghumante</span>
+            <span class="pl-9"
+              ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
+            ></span>
+          </div>
+          <div class="flex justify-start text-sm space-x-3">
+            <div class="w-6 h-6 bg-red-400 rounded-full"></div>
+
+            <span>Dhorpatan</span>
+            <span class="pl-9"
+              ><i class="fa-solid fa-circle fa-xs" style="color: #40b800"></i
+            ></span>
+          </div>
+        </div>
+      </aside>
+      <div class=" min-h-screen py-8 px-4">
+        <section class="mt-10 space-y-10">
+          <h1 class="text-6xl text-red-400 font-bold mb-5">Upcoming Events</h1>
+          <!-- 4th September -->
+          <div>
+            <h2 class="text-2xl font-semibold text-red-400 mb-4">4 September</h2>
+            <div class="border-t border-gray-300 py-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Event 1 -->
+              <div class=" border-red-400 pl-4">
+                <p class="text-xl font-bold">10:00</p>
+                <p>Welcome & Registration</p>
+                <p class="text-sm text-gray-600 mt-2">Receive trekking kits and maps.</p>
+                <a href="#" class="block mt-2 py-1 px-2 bg-red-400 text-white text-sm font-medium rounded">Fee: $50-100</a>
+              </div>
+              <!-- Event 2 -->
+              <div class="border-l-2 border-red-400 pl-4">
+                <p class="text-xl font-bold">13:30</p>
+                <p>Himalayan Trail Overview</p>
+                <div class="mt-4 h-40 bg-gray-300 rounded-md flex object-cover items-center justify-center">
+                  <img src="/images/trails.jpg" alt="Image" class="w-full h-full object-cover rounded-md" />
+                </div>
+                
+              </div>
+              <!-- Event 3 -->
+              <div class="border-l-2 border-red-400 pl-4">
+                <p class="text-xl font-bold">16:00</p>
+                <p>Safety Briefing & Tips</p>
+                <p class="text-sm text-gray-600 mt-2">Learn essential trekking safety measures.</p>
+                <p class="text-sm font-bold mt-2">John Smith, Trekking Expert</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- 5th September -->
+          <div>
+            <h2 class="text-2xl font-semibold text-red-400 mb-4">5 September</h2>
+            <div class="border-t border-gray-300 py-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Event 1 -->
+              <div class=" border-red-400 pl-4">
+                <p class="text-xl font-bold">12:00</p>
+                <p>Guided Hike to Poon Hill</p>
+                <div class="mt-4 h-40 bg-gray-300 rounded-md flex object-cover items-center justify-center">
+                  <img src="/images/poonhill.jpeg" alt="Image" class="w-full h-full object-cover rounded-md" />
+                </div>
+                
+              </div>
+              <!-- Event 2 -->
+              <div class="border-l-2 border-red-400 pl-4">
+                <p class="text-xl font-bold">14:30</p>
+                <p>Photography Workshop</p>
+                <p class="text-sm text-gray-600 mt-2">Capture stunning Himalayan landscapes.</p>
+                <p class="text-sm font-bold mt-2">Jane Doe, Travel Photographer</p>
+              </div>
+              <!-- Event 3 -->
+              <div class="border-l-2 border-red-400 pl-4">
+                <p class="text-xl font-bold">16:00</p>
+                <p>Cultural Presentation</p>
+                <p class="text-sm text-gray-600 mt-2">Learn about Nepali culture and traditions.</p>
+                <p class="text-sm font-bold mt-2">Local Guides</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
