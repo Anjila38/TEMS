@@ -36,25 +36,34 @@
       rel="stylesheet"
     />
   </head>
-  <body class="mx-20">
+  <body class="mx-10 md:mx-20">
     
-    <nav class="pt-4 py-2">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="social-media-icons flex space-x-3">
-          <a href="#"><i class="fa-brands p-2 fa-md fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands p-2 fa-md fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands p-2 fa-md fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands p-2 fa-md fa-linkedin"></i></a>
-        </div>
-        <div class="contact flex space-x-4">
-          <a href="#" class="flex items-center"
-            ><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
-            <span class="pl-2 text-sm">+977 9817153553</span></a
-          >
-          <a href="#" class="flex items-center"
-            ><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
-            <span class="pl-2 text-sm">support@trailmate.com</span></a
-          >
+    <nav class="px-5 pt-4 py-2 bg-white">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center"
+      >
+        <!-- Social Media Icons and Contact Info -->
+        <div class="flex justify-between w-full">
+          <div class="social-media-icons flex space-x-3">
+            <a href="#"><i class="fa-brands fa-facebook p-2 fa-md"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram p-2 fa-md"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter p-2 fa-md"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin p-2 fa-md"></i></a>
+          </div>
+          <div class="contact hidden md:flex space-x-4">
+            <a href="#" class="flex items-center">
+              <i class="fa-solid fa-phone" style="color: #f46b5b"></i>
+              <span class="pl-2 text-sm">+977 9817153553</span>
+            </a>
+            <a href="#" class="flex items-center">
+              <i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
+              <span class="pl-2 text-sm">support@trailmate.com</span>
+            </a>
+          </div>
+          <!-- Mobile Menu Toggle Button -->
+          <button class="md:hidden text-gray-600" id="menu-toggle">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
         </div>
       </div>
     </nav>
@@ -62,62 +71,87 @@
 
     <!-- Navbar -->
     <div
-      class="container mx-auto my-4 flex flex-col sm:flex-row justify-between items-center"
+  class="container mx-auto my-4 md:space-x-3 flex flex-col sm:flex-row justify-between items-center px-4"
+>
+  <!-- Logo -->
+  <a href="#" class="text-3xl font-bold text-red-400 mb-2 sm:mb-0">
+    TrailMate
+  </a>
+
+ 
+  <!-- Navigation Links -->
+  <div
+    id="menu"
+    class="py-3 text-gray-950 text-sm md:flex md:flex-row md:space-y-0 md:justify-center px-6 hidden flex flex-col justify-start md:space-x-6 space-y-3"
+  >
+    <a href="/index/main.html" class="hover:text-red-400">Home</a>
+    <a href="/index/about.html" class="text-red-400">About</a>
+    <a href="/index/category.html" class="hover:text-red-400">Product</a>
+    <a href="/index/blog.html" class="hover:text-red-400">Blog</a>
+    <a href="/index/contact.html" class="hover:text-red-400">Contact</a>
+  </div>
+
+  <!-- Search and Cart -->
+  <div class="flex items-center space-x-4">
+    <!-- Search Bar -->
+    <div
+      class="flex items-center border border-gray-300 rounded-lg overflow-hidden w-full sm:w-auto"
     >
-      <a href="#" class="text-3xl font-bold text-red-400 mb-2 sm:mb-0"
-        >TrailMate</a
-      >
-
-      <!-- Navigation Links -->
-      <div
-        class="pt-2 text-gray-950 text-sm flex justify-center space-x-7 mb-2 sm:mb-0"
-      >
-        <a href="/index/main.html" class="hover:text-red-400">Home</a>
-        <a href="/index/about.html" class="text-red-400">About</a>
-        <a href="/index/category.html" class="hover:text-red-400">Product</a>
-        <a href="/index/blog.html" class="hover:text-red-400">Blog</a>
-        <a href="/index/contact.html" class="hover:text-red-400">Contact</a>
-      </div>
-
-      <div class="flex items-center space-x-4">
-        <div
-          class="flex items-center border border-gray-300 rounded-lg overflow-hidden"
-        >
-          <input
-            type="text"
-            placeholder="Search here"
-            class="py-2 px-4 w-80 border-none outline-none text-sm text-gray-600 focus:ring-0"
-          />
-          <i class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"></i>
-        </div>
-
-        <div>
-          <a href="/index/cart.html"><i
-            class="fa-solid fa-lg fa-bag-shopping px-2"
-            style="color: #000000"
-          ></i></a>
-          
-        </div>
-      </div>
+      <input
+        type="text"
+        placeholder="Search here"
+        class="py-2 px-4 w-full sm:w-64 lg:w-80 border-none outline-none text-sm text-gray-600 focus:ring-0"
+      />
+      <i class="fa-solid fa-magnifying-glass bg-red-400 p-3 text-white"></i>
     </div>
+
+    <!-- Cart Icon -->
+    <div>
+      <a href="/index/cart.html">
+        <i class="fa-solid fa-lg fa-bag-shopping px-2" style="color: #000000"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- yo vanda mathi ko navbar homepage bahek sablai milcha -->
+
+
     <section class="text-sm pb-3 pt-10 flex">
       <a href="/index/main.html">Home</a>
       <p>&nbsp;>&nbsp;</p>
       <a href="#" class="text-red-400">About</a>
  </section>
-    <section class="text-center mb-12">
-      <h1 class="about-sub-heading">About TrailMate</h1>
-      <p class="my-9 text-sm mx-36 text-gray-700">
-        We are here to provide a place special for Trek-Gears. Although we only
-        operated for 2 years but we always provide the best service for
-        customers and all the sellers who use our website. With the hope that it
-        can help improve a better life using various Trek-Gears with the latest
-        technology, we are all ears to any suggestion from our dear customers
-      </p>
-      <div
-        class="mt-8 bg-gray-300 rounded-xl h-96 w-full max-w-6xl mx-auto" style="background-image: url(/images/about.jpg); background-size: cover; background-position:center;"
-      ></div>
-    </section>
+ <section class="text-center mb-12 px-4 sm:px-6 lg:px-12">
+  <!-- Heading -->
+  <h1 class="about-sub-heading text-3xl font-bold text-gray-900">About TrailMate</h1>
+
+  <!-- Description -->
+  <p class="my-6 text-sm text-gray-700 max-w-4xl mx-auto">
+    We are here to provide a place special for Trek-Gears. Although we have only 
+    operated for 2 years, we always provide the best service for customers and 
+    all the sellers who use our website. With the hope that it can help improve 
+    a better life using various Trek-Gears with the latest technology, we are 
+    all ears to any suggestion from our dear customers.
+  </p>
+
+  <!-- Image Section -->
+  <div
+    class="mt-8 bg-gray-300 rounded-xl h-64 sm:h-80 lg:h-96 w-full max-w-6xl mx-auto"
+    style="background-image: url('/images/about.jpg'); background-size: cover; background-position: center;"
+  ></div>
+</section>
+
     <section class="why-choose-us text-center my-12">
       <h2 class="sub-headings">Why Choose Us</h2>
       <div class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -193,35 +227,41 @@
         </div>
       </div>
     </section>
-    <section class="bg-red-400 -mx-20 px-28 text-white py-10">
+    <section class="bg-red-400 -mx-10 lg:-mx-20 px-6 sm:px-12 lg:px-28 text-white py-10">
       <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4"
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 space-y-6 md:space-y-0"
       >
-        <div class="flex text-center md:text-left mb-4 md:mb-0">
-          <img class="w-16 ml-10 mr-5" src="/images/newsletter.png" alt="" />
-    
+        <!-- Left Section: Newsletter Details -->
+        <div class="flex flex-col md:flex-row text-center md:text-left items-center md:items-start mb-4 md:mb-0">
+          <img
+            class="w-12 sm:w-16 md:w-20 mb-4 md:mb-0 md:ml-10 md:mr-5"
+            src="/images/newsletter.png"
+            alt="Newsletter Icon"
+          />
           <div>
             <h3
-              class="text-3xl mb-4 font-bold"
-              style="font-family: montserrat; letter-spacing: 0.07rem"
+              class="text-2xl sm:text-3xl font-bold mb-2 sm:mb-4"
+              style="font-family: Montserrat; letter-spacing: 0.07rem"
             >
               Join our newsletter now!
             </h3>
-            <p class="text-sm">
+            <p class="text-sm sm:text-base">
               Register now to get the latest updates and promos.
             </p>
           </div>
         </div>
-        <form class="flex space-x-4">
+    
+        <!-- Right Section: Email Form -->
+        <form class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 w-full md:w-auto">
           <input
             type="email"
-            class="px-4 py-2 rounded-lg text-gray-700 bg-gray-100 bg-no-repeat bg-left pl-12"
+            class="px-4 py-2 rounded-lg text-gray-700 bg-gray-100 bg-no-repeat bg-left pl-12 w-full sm:w-auto"
             placeholder="Enter your email"
             style="background-image: url('/images/email-icon.png'); background-size: 20px;"
           />
           <button
             type="submit"
-            class="bg-gray-900 text-white px-6 py-2 rounded-lg"
+            class="bg-gray-900 text-white px-6 py-2 rounded-lg w-full sm:w-auto"
           >
             Join
           </button>
@@ -229,144 +269,76 @@
       </div>
     </section>
     
+    
     <style>
       .footer {
         background: #f46b5b0d;
       }
     </style>
 
-    <footer class="footer -mx-20 px-20 w-100% text-gray-800 py-16">
-      <div class="px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between">
-          <div class="w-1/3">
-            <h2 class="text-2xl text-red-400 font-semibold mb-4">TrailMate</h2>
-            <p class="text-gray-500 mb-6 text-xs">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-
-            <ul class="space-y-3 text-xs">
-              <li>
-                <a href="#" class="flex items-center"
-                  ><i class="fa-solid fa-phone" style="color: #f46b5b"></i>
-                  <span class="pl-2 text-xs">+977 9817153553</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="flex items-center"
-                  ><i class="fa-solid fa-envelope" style="color: #f46b5b"></i>
-                  <span class="pl-2 text-xs">support@trkmate.com</span></a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="justify-items-end grid grid-cols-3 gap-20">
-            <div>
-              <h3
-                class="text-md font-bold mb-4"
-                style="font-family: montserrat"
-              >
-                Company
-              </h3>
-              <ul class="space-y-3 text-xs">
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >Products</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >Contact</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800">Blog</a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >Careers</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3
-                class="text-md font-bold mb-4"
-                style="font-family: montserrat"
-              >
-                Information
-              </h3>
-              <ul class="space-y-3 text-xs">
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >Help Center</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >Payment Methods</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >Return & Refund</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-gray-600 hover:text-gray-800"
-                    >Privacy Policy</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3
-                class="text-md mr-8 font-bold mb-4"
-                style="font-family: montserrat"
-              >
-                Follow Us
-              </h3>
-              <div class="flex space-x-4">
-                <a
-                  href="#"
-                  class="text-white hover:text-gray-800 bg-red-300 px-2 py-1 rounded"
-                  ><i class="fab fa-lg fa-instagram"></i
-                ></a>
-                <a
-                  href="#"
-                  class="text-white rounded hover:text-gray-800 bg-red-300 px-2 py-1"
-                  ><i class="fab fa-lg fa-twitter"></i
-                ></a>
-                <a
-                  href="#"
-                  class="text-white rounded hover:text-gray-800 bg-red-300 px-2 py-1"
-                  ><i class="fab fa-lg fa-facebook"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-between footer-bottom mt-20 w-full">
-          <p class="text-left flex justify-start text-gray-600 text-xs">
-            Copyright © 2021 Trailmate. All Rights Reserved
-          </p>
-
-          <div class="flex justify-end space-x-4">
-            <i class="fab fa-cc-visa text-gray-600"></i>
-            <i class="fab fa-cc-mastercard text-gray-600"></i>
-            <i class="fab fa-cc-paypal text-gray-600"></i>
-          </div>
+<footer class="footer md:-mx-20 -mx-10 px-20 w-100% mt-16 text-gray-800 py-16">
+  <div class="px-4 md:px-8">
+    <div class="flex flex-col sm:flex-row justify-between space-y-6 sm:space-y-0">
+      <div class="w-full">
+        <h2 class="text-xl font-bold mb-4">TrailMate</h2>
+        <p class="text-gray-500 mb-6 text-xs">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="text-white hover:text-gray-800 bg-red-300 px-1 rounded">
+            <i class="fab fa-sm fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white rounded hover:text-gray-800 bg-red-300 px-1">
+            <i class="fab fa-sm fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white rounded hover:text-gray-800 bg-red-300 px-1">
+            <i class="fab fa-sm fa-facebook"></i>
+          </a>
         </div>
       </div>
-    </footer>
+
+      <div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-md font-semibold mb-4">Company</h3>
+          <ul class="space-y-3 text-xs">
+            <li><a href="/index/about.html" class="text-gray-600 hover:text-gray-800">About</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Products</a></li>
+            <li><a href="/index/contact.html" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+            <li><a href="/index/blog.html" class="text-gray-600 hover:text-gray-800">Blog</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-md font-semibold mb-4">Information</h3>
+          <ul class="space-y-3 text-xs">
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Help Center</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Payment Methods</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Return & Refund</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-md font-semibold mb-4">Contact</h3>
+          <ul class="space-y-3 text-xs">
+            <li><a href="#" class="flex items-center"><i class="fa-solid fa-phone" style="color: #f46b5b"></i><span class="pl-2 text-xs">+977 9817153553</span></a></li>
+            <li><a href="#" class="flex items-center"><i class="fa-solid fa-envelope" style="color: #f46b5b"></i><span class="pl-2 text-xs">support@trkmate.com</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-between footer-bottom mt-20 w-full">
+      <p class="text-left text-gray-600 text-xs">Copyright © 2021 Trailmate. All Rights Reserved</p>
+      <div class="flex justify-start sm:justify-end space-x-4 mt-4 sm:mt-0">
+        <i class="fab fa-cc-visa text-gray-600"></i>
+        <i class="fab fa-cc-mastercard text-gray-600"></i>
+        <i class="fab fa-cc-paypal text-gray-600"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
   </body>
 </html>
